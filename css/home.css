@@ -44,12 +44,14 @@ body {
 
 /* add fonts  */
 #home h1 {
+    font-family: 'Poppins';
 	font-size: 8rem;
 	margin: 36px 0 22px;
 	color: #fff;
 }
 
 #home h2 {
+    font-family: 'Poppins';
 	font-size: 1.5rem;
 	/* margin: 36px 0 22px; */
 	color: #fff;
@@ -107,7 +109,6 @@ body {
 
 #home-intro {
     font-family: 'Poppins';
-    /* margin: 0; */
     color: #DBE8D4;
     position: relative;
     width: 30rem;
