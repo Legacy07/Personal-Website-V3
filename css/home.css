@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Poppins|Permanent+Marker|Chewy&display=swap');
 
 body {
     color: #000000;
@@ -7,7 +8,7 @@ body {
     margin: 0 auto;
     height: 100%;
     width: 100%;
-  }
+}
 
 .home-1 {
     position: relative;
@@ -45,16 +46,16 @@ body {
 /* add fonts  */
 #home h1 {
     font-family: 'Poppins';
-	font-size: 8rem;
-	margin: 36px 0 22px;
-	color: #fff;
+    font-size: 8rem;
+    margin: 36px 0 22px;
+    color: #fff;
 }
 
 #home h2 {
     font-family: 'Poppins';
-	font-size: 1.5rem;
-	/* margin: 36px 0 22px; */
-	color: #fff;
+    font-size: 1.5rem;
+    /* margin: 36px 0 22px; */
+    color: #fff;
 }
 
 .section {
@@ -100,11 +101,11 @@ body {
 }
 
 .table-cell {
-	position: relative;
-	display: table-cell;
-	vertical-align: middle;
-	padding-top: 20px;
-	z-index: 5;
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    padding-top: 20px;
+    z-index: 5;
 }
 
 #home-intro {
@@ -140,4 +141,16 @@ body {
 .home-scroll-bottom {
     display: block;
     bottom: 50px;
+}
+
+#about h1 {
+    font-family: 'Poppins';
+    position: relative;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+
+    background: linear-gradient(to right, #F16A70, #F16A70) no-repeat;
+    background-size: 20% 3px;
+    background-position:  bottom;
 }
