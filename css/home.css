@@ -233,3 +233,24 @@ a:hover #learn-more-button {
 .btn:hover {
     background-color: #C2F2E5;
 }
+
+.carousel-control-prev,
+.carousel-control-next {
+    align-items: flex-end;
+}
+
+/* .carousel-control-prev {
+    left: 0;
+    margin-left: -5%;
+}
+.carousel-control-next {
+    right: 0;
+    margin-right: 0;
+} */
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 65px;
+    height: 50px;
+    background-size: 35% 100%;
+}
