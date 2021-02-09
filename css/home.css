@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Poppins|Permanent+Marker|Chewy&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Poppins|Permanent+Marker|Chewy|Raleway&display=swap');
 
 body {
     color: #000000;
@@ -117,7 +117,7 @@ body {
 }
 
 h1.title {
-    font-family: 'Poppins';
+    font-family: 'Raleway', sans-serif;
     position: relative;
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -126,9 +126,13 @@ h1.title {
     background: linear-gradient(to right, #070826, #070826) no-repeat;
     background-size: 20% 3px;
     background-position: bottom;
+    font-weight: 600;
 }
 
-
+h2.font {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
 
 .card-project {
     display: block;
@@ -168,37 +172,51 @@ h1.title {
     box-shadow: 0 1px 0 rgba(30, 30, 32, 0.2) inset, 0 8px 32px #070826;
     text-decoration: none;
     background-image: linear-gradient(180deg, rgba(7, 8, 38, 1) 100%, rgba(0, 0, 0, 1) 0%) !important;
+    transition: .25s ease-in-out;
 }
 
+.tag {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    color: #c0c0c0;
+    width: 100%;
+    /* padding-bottom: 15px; */
+}
 
 ul.buzz-words,
-ul.buzz-words li {
+ul.buzz-words-projects,
+ul.buzz-words-projects li {
     list-style-type: none;
     padding: 0;
     margin-left: 0;
 }
 
-ul.buzz-words {
+ul.buzz-words-projects {
     opacity: 0;
     bottom: 0;
     position: absolute;
     transition: opacity .25s ease-in-out;
 }
 
-ul.buzz-words li {
+ul.buzz-words li,
+ul.buzz-words-projects li {
     display: inline-block;
+    background-color: #A9A9A9;
+    border: 0.2em solid #A9A9A9;
     border-radius: 0.6em;
     margin-right: 0.1em;
     margin-top: 0.2em;
     color: #FFFFFF;
     padding: 0 0.1em;
+}
+
+ul.buzz-words-projects li {
     font-family: "Chewy", cursive;
     color: #000000;
     background-color: #FFFFFF;
     border: 0.2em solid #000000;
 }
 
-a:hover ul.buzz-words {
+a:hover ul.buzz-words-projects {
     opacity: 1;
     max-height: inherit;
 }
@@ -210,24 +228,14 @@ p.project-title {
     color: #FFFFFF;
 }
 
-/* p.project-description {
-    font-size: 1.5em;
-    font-family: "Poppins";
-    position: relative;
-    color: #FFFFFF;
-    display: none;
-}
-
-a:hover p.project-description {
-    display: block;
-} */
-
 #learn-more-button {
     display: none;
+    transition: .25s ease-in-out;
 }
 
 a:hover #learn-more-button {
     display: block;
+    transition: .25s ease-in-out;
 }
 
 .btn:hover {
@@ -239,18 +247,41 @@ a:hover #learn-more-button {
     align-items: flex-end;
 }
 
-/* .carousel-control-prev {
-    left: 0;
-    margin-left: -5%;
+.carousel-control-prev {
+    justify-content: end;
 }
+
 .carousel-control-next {
-    right: 0;
-    margin-right: 0;
-} */
+    justify-content: flex-end;
+}
 
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
     width: 65px;
     height: 50px;
     background-size: 35% 100%;
+}
+
+.sticky-bottom {
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    padding: 1em;
+}
+
+.modal-content {
+    border-radius: 0;
+}
+
+.modal {
+    z-index: 999999;
+}
+
+.img-settings {
+    background-size: cover; /* or contain depending on what you want */
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align:center;
+    margin:auto;
+    padding:0;
 }
