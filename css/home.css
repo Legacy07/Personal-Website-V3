@@ -278,10 +278,18 @@ a:hover #learn-more-button {
 }
 
 .img-settings {
-    background-size: cover; /* or contain depending on what you want */
-    background-position: center center;
+    background-size: contain;
+    background-position: center;
     background-repeat: no-repeat;
-    text-align:center;
-    margin:auto;
-    padding:0;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+}
+
+.carousel-indicators li {
+    background-color: black;
+}
+
+.carousel-indicators .active {
+    background-color: red;
 }
