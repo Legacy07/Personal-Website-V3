@@ -293,3 +293,18 @@ a:hover #learn-more-button {
 .carousel-indicators .active {
     background-color: red;
 }
+
+.custom-btn {
+    background-color: white;
+    border-color: #070826;
+}
+
+.custom-btn:hover {
+    background-color: #070826;
+    color: white;
+}
+
+.active-btn {
+    background-color: #070826;
+    color: white;
+}
