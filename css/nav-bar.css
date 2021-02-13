@@ -51,6 +51,9 @@
     height: 51px;
     position: relative;
     text-decoration: none;
+    -webkit-transition: .1s all ease-out;
+    -moz-transition: .1s all ease-out;
+    transition: .1s all ease-out;
 }
 
 #nav-bar nav a.active,
