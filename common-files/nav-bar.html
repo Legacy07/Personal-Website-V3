@@ -67,8 +67,10 @@
             // add class for refresh
             var urlHash = window.location.hash;
             var id = urlHash.replace("#", "");
+            if (id == "") {
+                id = "home";
+            }
             var activeId = ".nav-bar-" + id;
-            console.log(activeId);
             $(activeId).addClass('active');
 
             // nav bar onclicks
