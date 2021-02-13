@@ -81,7 +81,7 @@
 .nav-font-size-sm {
     font-size: 0.5rem;
 }
-
+/* 
 [class^=icon-],
 [class*=" icon-"] {
     font-style: normal;
@@ -91,4 +91,4 @@
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-}
+} */
