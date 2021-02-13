@@ -32,13 +32,17 @@ https://vincentgarreau.com/particles.js/ -->
 </head>
 
 <body>
+    <script>
+        // force browser to scroll from top on reload
+        // history.scrollRestoration = "manual"
+    </script>
 
     <div id="nav-bar">
         <a class="logo" rel="index" href="#home">
             <img src="images/logo.png" alt="Ahmet Ince logo">
         </a>
         <nav class="en" id="nav-bar-menu">
-            <a rel="index" href="#home" class="nav-bar nav-bar-home">
+            <a rel="index" href="#home" class="nav-bar nav-bar-home active">
                 <i class="fa fa-home icon-home"></i>
                 <p class="nav-font-size-sm">Home</p>
             </a>
@@ -89,63 +93,6 @@ https://vincentgarreau.com/particles.js/ -->
             </li>
         </ul>
     </div>
-
-    <script>
-        $(document).ready(function () {
-            // add class for refresh
-            var urlHash = window.location.hash;
-            var id = urlHash.replace("#", "");
-            if (id == "") {
-                id = "home";
-            }
-            var activeId = ".nav-bar-" + id;
-            $(activeId).addClass('active');
-
-            // nav bar onclicks
-            // $("a.nav-bar").on('click', function (event) {
-            //     // remove active class from everywhere 
-            //     $('.active').removeClass('active');
-            //     // add active class on the element
-            //     $(this).addClass('active');
-            // });
-
-            var lastId,
-                navBarMenu = $("#nav-bar-menu"),
-                navBarMenuHeight = navBarMenu.outerHeight() + 15,
-                // All list items
-                navBarItems = navBarMenu.find("a"),
-                // Anchors corresponding to nav bar items
-                scrollItems = navBarItems.map(function () {
-                    var item = $($(this).attr("href"));
-                    if (item.length) {
-                        return item;
-                    }
-                });
-
-            // https://stackoverflow.com/questions/9979827/change-active-menu-item-on-page-scroll/
-            $(window).scroll(function () {
-                // Get container scroll position
-                var fromTop = $(this).scrollTop() + navBarMenuHeight;
-
-                // Get id of current scroll item
-                var currentElement = scrollItems.map(function () {
-                    if ($(this).offset().top < fromTop)
-                        return this;
-                });
-                // Get the id of the current element
-                currentElement = currentElement[currentElement.length - 1];
-                var id = currentElement && currentElement.length ? currentElement[0].id : "";
-
-                if (lastId !== id) {
-                    lastId = id;
-
-                    $('.active').removeClass('active');
-                    var activeId = ".nav-bar-" + id;
-                    $(activeId).addClass('active');
-                }
-            });
-        });
-    </script>
 
     <section id="home" class="home-1" style="background-position: 50% 0px;">
         <div class="page-table">
@@ -439,6 +386,7 @@ https://vincentgarreau.com/particles.js/ -->
     <script src="js/show-modals.js"></script>
     <script src="js/smooth-scroll.js"></script>
     <script src="js/filter-projects.js"></script>
+    <script src="js/nav-bar-active.js"></script>
 
 </body>
 
