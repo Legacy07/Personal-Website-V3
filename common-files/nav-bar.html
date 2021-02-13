@@ -10,23 +10,23 @@
             <img src="images/logo.png" alt="Ahmet Ince logo">
         </a>
         <nav class="en">
-            <a rel="index" href="index.html#home" class="active">
+            <a rel="index" href="index.html#home" class="nav-bar nav-bar-home">
                 <i class="fa fa-home icon-home"></i>
                 <p class="nav-font-size-sm">Home</p>
             </a>
-            <a rel="about" href="index.html#about" class="">
+            <a rel="about" href="index.html#about" class="nav-bar nav-bar-about">
                 <i class="fa fa-user-secret icon-about"></i>
                 <p class="nav-font-size-sm">About</p>
             </a>
-            <a rel="portfolio" href="index.html#portfolio" class="">
+            <a rel="portfolio" href="index.html#portfolio" class="nav-bar nav-bar-portfolio">
                 <i class="fa fa-code icon-portfolio"></i>
                 <p class="nav-font-size-sm">Portfolio</p>
             </a>
-            <a rel="blog" href="index.html#blog" class="">
+            <a rel="blog" href="index.html#blog" class="nav-bar nav-bar-blog">
                 <i class="fa fa-rss icon-blog"></i>
                 <p class="nav-font-size-sm">Blog</p>
             </a>
-            <a rel="contact" href="index.html#contact" class="">
+            <a rel="contact" href="index.html#contact" class="nav-bar nav-bar-contact">
                 <i class="fa fa-envelope icon-contact"></i>
                 <p class="nav-font-size-sm">Contact</p>
             </a>
@@ -61,6 +61,25 @@
             </li>
         </ul>
     </div>
+
+    <script>
+        $(document).ready(function () {
+            // add class for refresh
+            var urlHash = window.location.hash;
+            var id = urlHash.replace("#", "");
+            var activeId = ".nav-bar-" + id;
+            console.log(activeId);
+            $(activeId).addClass('active');
+
+            // nav bar onclicks
+            $("a.nav-bar").on('click', function (event) {
+                // remove active class from everywhere 
+                $('.active').removeClass('active');
+                // add active class on the element
+                $(this).addClass('active');
+            });
+        });
+    </script>
 </body>
 
 <script src="js/smooth-scroll.js"></script>
