@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-
+@import url('/css/variables.css');
 
 /* .skill-bars {
     padding: 25px 30px;
@@ -41,7 +40,7 @@
 .skill-bars .bar .progress-line {
     height: 10px;
     width: 100%;
-    background: #C2F2E5;
+    background: var(--secondary-color);
     position: relative;
     transform: scaleX(0);
     transform-origin: left;
@@ -63,7 +62,7 @@
     border-radius: 10px;
     transform: scaleX(0);
     transform-origin: left;
-    background: #070826;
+    background: var(--primary-color);
     animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 

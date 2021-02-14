@@ -1,3 +1,5 @@
+@import url('/css/variables.css');
+
 #nav-bar {
     background: #181818;
     width: 60px;
@@ -58,7 +60,7 @@
 
 #nav-bar nav a.active,
 #nav-bar nav a:hover {
-    color: #C2F2E5;
+    color: var(--secondary-color);
 }
 
 #nav-bar nav a p {

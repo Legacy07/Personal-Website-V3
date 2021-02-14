@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Poppins|Permanent+Marker|Chewy|Raleway&display=swap');
+@import url('/css/variables.css');
 
 body {
     color: #000000;
-    font-family: "Poppins", sans-serif;
-    font-size: 0.9em;
+    font-family: var(--body-font-family);
+    font-size: var(--body-font-size);
     line-height: 1.5;
     margin: 0 auto;
     height: 100%;
     width: 100%;
 }
 
-.home-1 {
+.home-section {
     position: relative;
     height: 100%;
     min-height: 550px;
@@ -23,7 +23,7 @@ body {
     background-size: cover;
 }
 
-.home-1:after {
+.home-section:after {
     content: "";
     position: absolute;
     width: 100%;
@@ -34,7 +34,7 @@ body {
     z-index: 0;
 }
 
-.home-1 #particles-js {
+.home-section #particles-js {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -43,28 +43,23 @@ body {
     z-index: 2;
 }
 
-/* add fonts  */
 #home h1 {
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--title-font-family);
     font-size: 8rem;
     margin: 36px 0 22px;
-    color: #fff;
-    font-weight: 600;
+    color: white;
+    font-weight: var(--font-weight-600);
 }
 
 #home h2 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.5rem;
+    font-family: var(--title-font-family);
+    font-size: var(--subtitle-font-size);
     color: #fff;
 }
 
 .section {
-    background-color: #fff;
+    background-color: white;
     padding: 100px 0;
-}
-
-.second-bg {
-    background-color: #fafafa;
 }
 
 .page-table {
@@ -82,24 +77,11 @@ body {
 }
 
 #home-intro {
-    font-family: 'Poppins';
     color: #DBE8D4;
     position: relative;
     width: 30rem;
     display: inline-block;
     margin-top: 3%;
-}
-
-.header-size {
-    font-size: 2rem;
-}
-
-.sub-header-size {
-    font-size: 1.5rem;
-}
-
-.text-size {
-    font-size: 1rem;
 }
 
 .horizontal-center {
@@ -117,21 +99,21 @@ body {
 }
 
 h1.title {
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--title-font-family);
     position: relative;
     padding-top: 3rem;
     padding-bottom: 3rem;
     margin-bottom: 3rem;
 
-    background: linear-gradient(to right, #070826, #070826) no-repeat;
+    background: linear-gradient(to right, var(--primary-color), var(--primary-color)) no-repeat;
     background-size: 20% 3px;
     background-position: bottom;
-    font-weight: 600;
+    font-weight: var(--font-weight-600);
 }
 
-h2.font {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
+h2.bold {
+    font-family: var(--title-font-family);
+    font-weight: var(--font-weight-600);
 }
 
 .card-project {
@@ -169,7 +151,7 @@ h2.font {
 }
 
 .card-project:hover {
-    box-shadow: 0 1px 0 rgba(30, 30, 32, 0.2) inset, 0 8px 32px #070826;
+    box-shadow: 0 1px 0 rgba(30, 30, 32, 0.2) inset, 0 8px 32px var(--primary-color);
     text-decoration: none;
     background-image: linear-gradient(180deg, rgba(7, 8, 38, 1) 100%, rgba(0, 0, 0, 1) 0%) !important;
     transition: .25s ease-in-out;
@@ -188,6 +170,7 @@ ul.buzz-words-projects li {
     list-style-type: none;
     padding: 0;
     margin-left: 0;
+    font-family: var(--fancy-font-family);
 }
 
 ul.buzz-words-projects {
@@ -200,20 +183,19 @@ ul.buzz-words-projects {
 ul.buzz-words li,
 ul.buzz-words-projects li {
     display: inline-block;
-    background-color: #A9A9A9;
-    border: 0.2em solid #A9A9A9;
+    background-color: var(--tertiary-color);
+    border: 0.2em solid var(--tertiary-color);
     border-radius: 0.6em;
     margin-right: 0.1em;
     margin-top: 0.2em;
-    color: #FFFFFF;
+    color: white;
     padding: 0 0.1em;
 }
 
 ul.buzz-words-projects li {
-    font-family: "Chewy", cursive;
-    color: #000000;
-    background-color: #FFFFFF;
-    border: 0.2em solid #000000;
+    color: black;
+    background-color: white;
+    border: 0.2em solid black;
 }
 
 a:hover ul.buzz-words-projects {
@@ -222,14 +204,16 @@ a:hover ul.buzz-words-projects {
 }
 
 p.project-title {
-    font-size: 2em;
-    font-family: "Chewy", cursive;
+    font-size: var(--title-font-size);
+    ;
+    font-family: var(--fancy-font-family);
     position: relative;
-    color: #FFFFFF;
+    color: white;
 }
 
 #learn-more-button {
     display: none;
+    border-color: var(--secondary-color);
     transition: .25s ease-in-out;
 }
 
@@ -238,8 +222,9 @@ a:hover #learn-more-button {
     transition: .25s ease-in-out;
 }
 
-.btn:hover {
-    background-color: #C2F2E5;
+.secondary-btn:hover {
+    background-color: var(--secondary-color);
+    color: white;
 }
 
 .carousel-control-prev,
@@ -291,20 +276,20 @@ a:hover #learn-more-button {
 }
 
 .carousel-indicators .active {
-    background-color: red;
+    background-color: var(--secondary-color);
 }
 
-.custom-btn {
+.primary-btn {
     background-color: white;
-    border-color: #070826;
+    border-color: var(--primary-color);
 }
 
-.custom-btn:hover {
-    background-color: #070826;
+.primary-btn:hover {
+    background-color: var(--primary-color);
     color: white;
 }
 
 .active-btn {
-    background-color: #070826;
+    background-color: var(--primary-color);
     color: white;
 }
