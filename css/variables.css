@@ -7,8 +7,8 @@
     --title-font-family: 'Raleway', sans-serif;;
     --body-font-family: 'Poppins', sans-serif;
     --fancy-font-family: 'Chewy', cursive;
-    --title-font-size: 2rem;
-    --subtitle-font-size: 1.5rem;
+    --title-font-size: clamp(1.5rem, 10vw, 2rem);
+    --subtitle-font-size: clamp(1rem, 10vw, 1.5rem);
     --body-font-size: 0.9rem;
 
     --font-weight-600: 600;

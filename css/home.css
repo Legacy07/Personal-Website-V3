@@ -45,7 +45,8 @@ body {
 
 #home h1 {
     font-family: var(--title-font-family);
-    font-size: 8rem;
+    /* use clamp to resize text for different screen sizes - minimum, relative, maximum */
+    font-size: clamp(4rem, 10vw, 8rem);
     margin: 36px 0 22px;
     color: white;
     font-weight: var(--font-weight-600);
@@ -57,9 +58,10 @@ body {
     color: #fff;
 }
 
-.section {
-    background-color: white;
-    padding: 100px 0;
+.section-body {
+    /* background-color: white; */
+    /* padding: 100px 0; */
+    /* margin-left: clamp(80px, 1%, 10px) !important; */
 }
 
 .page-table {
@@ -79,9 +81,11 @@ body {
 #home-intro {
     color: #DBE8D4;
     position: relative;
-    width: 30rem;
+    max-width: 30rem;
     display: inline-block;
     margin-top: 3%;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .horizontal-center {
@@ -119,7 +123,7 @@ h2.bold {
 .card-project {
     display: block;
     position: relative;
-    width: 25em;
+    width: 25rem;
     height: 15em;
     padding: calc(32px/2) 32px;
     padding-bottom: 66%;
@@ -129,6 +133,7 @@ h2.bold {
     box-shadow: 0 1px 0 rgba(30, 30, 32, 0.2) inset, 0 8px 16px rgba(0, 0, 0, 0.5);
     transition: box-shadow 100ms ease-out;
     outline: none;
+    text-decoration: none;
 }
 
 .card-project:after {
@@ -205,7 +210,6 @@ a:hover ul.buzz-words-projects {
 
 p.project-title {
     font-size: var(--title-font-size);
-    ;
     font-family: var(--fancy-font-family);
     position: relative;
     color: white;
@@ -218,7 +222,7 @@ p.project-title {
 }
 
 a:hover #learn-more-button {
-    display: block;
+    display: inline;
     transition: .25s ease-in-out;
 }
 
@@ -292,4 +296,40 @@ a:hover #learn-more-button {
 .active-btn {
     background-color: var(--primary-color);
     color: white;
+}
+
+.filter-btn {
+    padding-left: clamp(1rem, 2.5vw, 3rem);
+    padding-right: clamp(1rem, 2.5vw, 3rem);
+    margin-right: clamp(1rem, 2.5vw, 3rem);
+}
+
+.btn-close {
+    float: right;
+}
+
+.modal-fixed-bottom {
+    /* position: absolute; */
+    bottom: 0;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+@media only screen and (max-width: 769px) {
+    ul.buzz-words-projects {
+        opacity: 1;
+    }
+
+    .modal-fixed-bottom {
+        position: absolute;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .modal-wrap .modal {
+        height: initial;
+        top: -6vh;
+    }
 }
