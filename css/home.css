@@ -123,10 +123,10 @@ h2.bold {
 .card-project {
     display: block;
     position: relative;
-    width: 25rem;
+    width: max(100%, 20rem);
     height: 15em;
     padding: calc(32px/2) 32px;
-    padding-bottom: 66%;
+    padding-bottom: clamp(30%, 50%, 66%);
     background-size: cover;
     background-position: center center;
     background-blend-mode: hard-light;
@@ -317,7 +317,7 @@ a:hover #learn-more-button {
     border-top: none;
 }
 
-@media only screen and (max-width: 769px) {
+@media screen and (max-width: 769px) {
     ul.buzz-words-projects {
         opacity: 1;
     }
