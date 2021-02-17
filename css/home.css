@@ -333,3 +333,9 @@ a:hover #learn-more-button {
         top: -6vh;
     }
 }
+
+@media (min-width: 1024px) {
+    .nav-bar-padding-left-size {
+        padding-left: 60px;
+    }
+}
