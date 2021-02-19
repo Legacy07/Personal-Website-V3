@@ -317,6 +317,54 @@ a:hover #learn-more-button {
     border-top: none;
 }
 
+footer {
+    background: #181818;
+    padding: 70px 0 50px 0;
+    position: relative;
+    text-align: center;
+    margin-top: 25px;
+}
+
+#links {
+    list-style-type: none;
+}
+
+#footer-links li {
+    display: inline-block;
+    text-align: center;
+}
+
+#footer-links li a {
+    /* background-color: white; */
+    /* border-radius: 25%; */
+    text-align: center;
+    font-size: 1.5rem;
+    display: block;
+    color: var(--tertiary-color);
+    height: 2rem;
+    width: 2rem;
+    margin: 10px;
+}
+
+.footer-name {
+    color: var(--secondary-color);
+}
+
+#autoScrollButton {
+    background: var(--tertiary-color);
+    color: white;
+    cursor: pointer;
+    font-size: 25pt;
+    height: 50px;
+    left: 0;
+    line-height: 40pt;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: -25px;
+    width: 47px;
+}
+
 @media screen and (max-width: 769px) {
     ul.buzz-words-projects {
         opacity: 1;
@@ -337,5 +385,9 @@ a:hover #learn-more-button {
 @media (min-width: 1024px) {
     .nav-bar-padding-left-size {
         padding-left: 60px;
+    }
+
+    #autoScrollButton {
+        left: 60px;
     }
 }
