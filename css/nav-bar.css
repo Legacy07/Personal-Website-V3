@@ -28,6 +28,11 @@
 
 #nav-bar li a {
     color: var(--tertiary-color);
+    transition: 250ms ease-in;
+}
+
+#nav-bar li:hover a {
+    color: var(--secondary-color);
 }
 
 .logo {
