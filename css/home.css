@@ -338,6 +338,10 @@ a:hover #learn-more-button {
     .modal-fixed-bottom {
         position: absolute;
     }
+
+    .mobile-img-height {
+        height: 300px;
+    }
 }
 
 @media screen and (min-width: 600px) {
