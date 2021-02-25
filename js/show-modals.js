@@ -23,4 +23,14 @@ $(document).ready(function () {
         e.preventDefault();
         $('#nextbook-project-modal').modal('show').find('.modal-content').load($(this).attr('href'));
     });
+
+    $('#previous-version-one').on('click', function (e) {
+        e.preventDefault();
+        $('#previous-version-one-modal').modal('show');
+    });
+
+    $('#previous-version-two').on('click', function (e) {
+        e.preventDefault();
+        $('#previous-version-two-modal').modal('show');
+    });
 });
