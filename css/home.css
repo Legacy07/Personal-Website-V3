@@ -64,6 +64,19 @@ body {
     /* margin-left: clamp(80px, 1%, 10px) !important; */
 }
 
+p a {
+    color:black;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px solid var(--tertiary-color);
+    transition: border-bottom 0.2s;
+}
+
+p a:hover {
+    color:black;
+    border-bottom: 3px solid var(--tertiary-color);
+}
+
 .page-table {
     display: table;
     width: 100%;
