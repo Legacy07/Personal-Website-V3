@@ -177,8 +177,10 @@ https://vincentgarreau.com/particles.js/ -->
                                                 data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                     </div>
+
                                     <iframe src="/previous-versions/version-1/index.html"
-                                        class="previous-version-preview"></iframe>
+                                        class="previous-version-preview" onload="hijacklinks(this)">
+                                    </iframe>
                                 </div>
                             </div>
                         </div>
@@ -195,10 +197,19 @@ https://vincentgarreau.com/particles.js/ -->
                                         </div>
                                     </div>
                                     <iframe src="/previous-versions/version-2/index.html"
-                                        class="previous-version-preview"></iframe>
+                                        class="previous-version-preview" onload="hijacklinks(this)"></iframe>
                                 </div>
                             </div>
                         </div>
+
+                        <script type="text/javascript">
+                            function hijacklinks(iframe) {
+                                var as = iframe.contentDocument.getElementsByTagName('a');
+                                for (i = 0; i < as.length; i++) {
+                                    as[i].setAttribute('target', '_self');
+                                }
+                            }
+                        </script>
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-6">
