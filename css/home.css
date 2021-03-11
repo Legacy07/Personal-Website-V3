@@ -65,7 +65,7 @@ body {
 }
 
 p a {
-    color:black;
+    color: black;
     text-decoration: none;
     font-weight: bold;
     border-bottom: 1px solid var(--tertiary-color);
@@ -73,7 +73,7 @@ p a {
 }
 
 p a:hover {
-    color:black;
+    color: black;
     border-bottom: 3px solid var(--tertiary-color);
 }
 
@@ -344,6 +344,16 @@ a:hover #learn-more-button {
     min-height: 100vh;
 }
 
+.preview-icon-prev {
+    color: var(--tertiary-color);
+    cursor: pointer;
+    transition: .25s ease-in-out;
+}
+
+.preview-icon-prev:hover {
+    color: var(--secondary-color);
+}
+
 @media screen and (max-width: 769px) {
     ul.buzz-words-projects {
         opacity: 1;
@@ -356,7 +366,7 @@ a:hover #learn-more-button {
     .mobile-img-height {
         height: 300px;
     }
-    
+
     .modal-full-screen {
         margin: 0;
     }

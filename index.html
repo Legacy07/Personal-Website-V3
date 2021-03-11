@@ -158,15 +158,20 @@
                                 <div class="modal-content" style="height: 100%;">
                                     <div class="modal-header"
                                         style="background-color: var(--primary-color); color: white;">
-                                        <h2>Personal Website - Version 1, released on 2018</h2>
+                                        <!-- <div class="col">
+                                            <h3>
+                                                <i class="fas fa-arrow-circle-left preview-icon-prev"
+                                                    style="margin-right: 25px;"></i>
+                                            </h3>
+                                        </div> -->
+                                        <h2> Personal Website - Version 1, released on 2018</h2>
                                         <div class="col">
                                             <button type="button" class="btn-close btn-close-white"
                                                 data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                     </div>
 
-                                    <iframe src="/previous-versions/version-1/index.html"
-                                        class="previous-version-preview" onload="hijacklinks(this)">
+                                    <iframe id="previous-version-one-iframe" class="previous-version-preview">
                                     </iframe>
                                 </div>
                             </div>
@@ -183,20 +188,10 @@
                                                 data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                     </div>
-                                    <iframe src="/previous-versions/version-2/index.html"
-                                        class="previous-version-preview" onload="hijacklinks(this)"></iframe>
+                                    <iframe id="previous-version-two-iframe" class="previous-version-preview"></iframe>
                                 </div>
                             </div>
                         </div>
-
-                        <script type="text/javascript">
-                            function hijacklinks(iframe) {
-                                var as = iframe.contentDocument.getElementsByTagName('a');
-                                for (i = 0; i < as.length; i++) {
-                                    as[i].setAttribute('target', '_self');
-                                }
-                            }
-                        </script>
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-6">
@@ -466,10 +461,10 @@
 
     <script src="js/google-analytics.js"></script>
 
-    
+
     <script src="https://code.jquery.com/jquery-3.5.1.js">
     </script>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
         integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous">
     </script>

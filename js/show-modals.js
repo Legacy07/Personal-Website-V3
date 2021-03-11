@@ -26,11 +26,29 @@ $(document).ready(function () {
 
     $('#previous-version-one').on('click', function (e) {
         e.preventDefault();
+
+        var id = "previous-version-one-iframe";
+        document.getElementById(id).src = "/previous-versions/version-1/index.html";
+        hijacklinks(id);
+
         $('#previous-version-one-modal').modal('show');
     });
 
     $('#previous-version-two').on('click', function (e) {
         e.preventDefault();
+
+        var id = "previous-version-two-iframe";
+        document.getElementById(id).src = "/previous-versions/version-2/index.html";
+        hijacklinks(id);
+
         $('#previous-version-two-modal').modal('show');
     });
 });
+
+function hijacklinks(id) {
+    var iframe = document.getElementsByClassName(id);
+    var as = iframe.contentDocument.getElementsByTagName('a');
+    for (i = 0; i < as.length; i++) {
+        as[i].setAttribute('target', '_self');
+    }
+}
