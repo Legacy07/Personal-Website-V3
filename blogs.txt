@@ -7,3 +7,6 @@ https://tutorialzine.com/2013/03/simple-php-blogging-system
  https://www.youtube.com/results?search_query=php+blog+tutorial+
  https://www.youtube.com/watch?v=iONugkYM2rs
  https://www.youtube.com/watch?v=1NrHkjlWVhM
+
+using octboer cms 
+ this guys got a whole playlist - https://www.youtube.com/watch?v=TElafW6M7Q0&list=RDCMUCXQC_GB5hG6PkzIhSMZ-hWA&start_radio=1&t=1
