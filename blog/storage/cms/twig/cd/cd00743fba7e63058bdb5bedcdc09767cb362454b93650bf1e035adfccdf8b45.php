@@ -59,7 +59,7 @@ class __TwigTemplate_3fe4035dcaf981d875b9ea9b8a07f2513991cf558c93e50a27675908611
     {
         $macros = $this->macros;
         // line 1
-        echo "<div id=\"footer\">
+        echo "<!-- <div id=\"footer\">
     <div class=\"container\">
         <hr />
         <p class=\"muted credit\">&copy; 2013 - ";
@@ -67,7 +67,7 @@ class __TwigTemplate_3fe4035dcaf981d875b9ea9b8a07f2513991cf558c93e50a27675908611
         echo twig_escape_filter($this->env, twig_date_format_filter($this->env, "now", "Y"), "html", null, true);
         echo " Alexey Bobkov &amp; Samuel Georges.</p>
     </div>
-</div>";
+</div> -->";
     }
 
     public function getTemplateName()
@@ -87,11 +87,11 @@ class __TwigTemplate_3fe4035dcaf981d875b9ea9b8a07f2513991cf558c93e50a27675908611
 
     public function getSourceContext()
     {
-        return new Source("<div id=\"footer\">
+        return new Source("<!-- <div id=\"footer\">
     <div class=\"container\">
         <hr />
         <p class=\"muted credit\">&copy; 2013 - {{ \"now\"|date(\"Y\") }} Alexey Bobkov &amp; Samuel Georges.</p>
     </div>
-</div>", "C:\\xampp\\htdocs\\personal-website-v3\\blog/themes/demo/partials/site/footer.htm", "");
+</div> -->", "C:\\xampp\\htdocs\\personal-website-v3\\blog/themes/demo/partials/site/footer.htm", "");
     }
 }

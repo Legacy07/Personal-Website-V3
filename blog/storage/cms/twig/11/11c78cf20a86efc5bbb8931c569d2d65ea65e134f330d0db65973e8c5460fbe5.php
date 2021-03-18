@@ -29,8 +29,8 @@ class __TwigTemplate_4a8ba4f84687d094ca4e5fc3aec958a8d3a956a8695d3a3c49540d895aa
         $this->blocks = [
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
-        $tags = array("if" => 16);
-        $filters = array("page" => 11);
+        $tags = array("if" => 19);
+        $filters = array("page" => 14);
         $functions = array();
 
         try {
@@ -59,7 +59,10 @@ class __TwigTemplate_4a8ba4f84687d094ca4e5fc3aec958a8d3a956a8695d3a3c49540d895aa
     {
         $macros = $this->macros;
         // line 1
-        echo "<!-- Nav -->
+        echo "<link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css\" rel=\"stylesheet\"
+integrity=\"sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl\" crossorigin=\"anonymous\">
+
+<!-- Nav
 <nav id=\"layout-nav\" class=\"navbar navbar-inverse navbar-fixed-top navbar-autohide\" role=\"navigation\">
     <div class=\"container\">
         <div class=\"navbar-header\">
@@ -70,7 +73,7 @@ class __TwigTemplate_4a8ba4f84687d094ca4e5fc3aec958a8d3a956a8695d3a3c49540d895aa
                 <span class=\"icon-bar\"></span>
             </button>
             <a class=\"navbar-brand\" href=\"";
-        // line 11
+        // line 14
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("home");
         echo "\">October Demo</a>
         </div>
@@ -78,24 +81,24 @@ class __TwigTemplate_4a8ba4f84687d094ca4e5fc3aec958a8d3a956a8695d3a3c49540d895aa
             <ul class=\"nav navbar-nav\">
                 <li class=\"separator hidden-xs\"></li>
                 <li class=\"";
-        // line 16
-        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 16), "id", [], "any", false, false, true, 16) == "home")) {
+        // line 19
+        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 19), "id", [], "any", false, false, true, 19) == "home")) {
             echo "active";
         }
         echo "\"><a href=\"";
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("home");
         echo "\">Basic concepts</a></li>
                 <li class=\"";
-        // line 17
-        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 17), "id", [], "any", false, false, true, 17) == "ajax")) {
+        // line 20
+        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 20), "id", [], "any", false, false, true, 20) == "ajax")) {
             echo "active";
         }
         echo "\"><a href=\"";
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("ajax");
         echo "\">AJAX framework</a></li>
                 <li class=\"";
-        // line 18
-        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 18), "id", [], "any", false, false, true, 18) == "plugins")) {
+        // line 21
+        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 21), "id", [], "any", false, false, true, 21) == "plugins")) {
             echo "active";
         }
         echo "\"><a href=\"";
@@ -104,7 +107,18 @@ class __TwigTemplate_4a8ba4f84687d094ca4e5fc3aec958a8d3a956a8695d3a3c49540d895aa
             </ul>
         </div>
     </div>
-</nav>";
+</nav> -->
+
+<script src=\"https://code.jquery.com/jquery-3.5.1.js\">
+</script>
+
+<script src=\"https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js\"
+    integrity=\"sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi\" crossorigin=\"anonymous\">
+</script>
+
+<script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js\"
+    integrity=\"sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0\" crossorigin=\"anonymous\">
+</script>";
     }
 
     public function getTemplateName()
@@ -119,12 +133,15 @@ class __TwigTemplate_4a8ba4f84687d094ca4e5fc3aec958a8d3a956a8695d3a3c49540d895aa
 
     public function getDebugInfo()
     {
-        return array (  98 => 18,  90 => 17,  82 => 16,  74 => 11,  62 => 1,);
+        return array (  101 => 21,  93 => 20,  85 => 19,  77 => 14,  62 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("<!-- Nav -->
+        return new Source("<link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css\" rel=\"stylesheet\"
+integrity=\"sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl\" crossorigin=\"anonymous\">
+
+<!-- Nav
 <nav id=\"layout-nav\" class=\"navbar navbar-inverse navbar-fixed-top navbar-autohide\" role=\"navigation\">
     <div class=\"container\">
         <div class=\"navbar-header\">
@@ -145,6 +162,17 @@ class __TwigTemplate_4a8ba4f84687d094ca4e5fc3aec958a8d3a956a8695d3a3c49540d895aa
             </ul>
         </div>
     </div>
-</nav>", "C:\\xampp\\htdocs\\personal-website-v3\\blog/themes/demo/partials/site/header.htm", "");
+</nav> -->
+
+<script src=\"https://code.jquery.com/jquery-3.5.1.js\">
+</script>
+
+<script src=\"https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js\"
+    integrity=\"sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi\" crossorigin=\"anonymous\">
+</script>
+
+<script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js\"
+    integrity=\"sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0\" crossorigin=\"anonymous\">
+</script>", "C:\\xampp\\htdocs\\personal-website-v3\\blog/themes/demo/partials/site/header.htm", "");
     }
 }
