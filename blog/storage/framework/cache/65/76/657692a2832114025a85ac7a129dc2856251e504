@@ -1,4 +1,4 @@
-1616028457a:1:{s:11:"default.htm";a:6:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:1423:"description = "Default layout"
+1616115937a:1:{s:11:"default.htm";a:6:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:1609:"description = "Default layout"
 ==
 <!DOCTYPE html>
 <html>
@@ -13,6 +13,8 @@
         <link rel="icon" type="image/png" href="{{ 'assets/images/october.png'|theme }}">
         <link href="{{ 'assets/css/vendor.css'|theme }}" rel="stylesheet">
         <link href="{{ 'assets/css/theme.css'|theme }}" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Poppins|Permanent+Marker|Chewy|Raleway&display=swap" rel="stylesheet">
+
         {% styles %}
     </head>
     <body>
@@ -40,8 +42,7 @@
         {% scripts %}
 
     </body>
-</html>
-";s:5:"mtime";i:1615508532;s:6:"markup";s:1388:"<!DOCTYPE html>
+</html>";s:5:"mtime";i:1616108530;s:6:"markup";s:1573:"<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -54,6 +55,8 @@
         <link rel="icon" type="image/png" href="{{ 'assets/images/october.png'|theme }}">
         <link href="{{ 'assets/css/vendor.css'|theme }}" rel="stylesheet">
         <link href="{{ 'assets/css/theme.css'|theme }}" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Poppins|Permanent+Marker|Chewy|Raleway&display=swap" rel="stylesheet">
+
         {% styles %}
     </head>
     <body>

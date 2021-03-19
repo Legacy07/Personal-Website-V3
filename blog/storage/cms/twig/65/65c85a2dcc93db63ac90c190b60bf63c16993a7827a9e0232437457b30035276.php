@@ -29,7 +29,7 @@ class __TwigTemplate_bc0a4e98272465671767661062d67f5e0a794e55fd76e9604555806d3eb
         $this->blocks = [
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
-        $tags = array("styles" => 14, "partial" => 20, "page" => 25, "framework" => 37, "scripts" => 38);
+        $tags = array("styles" => 16, "partial" => 22, "page" => 27, "framework" => 39, "scripts" => 40);
         $filters = array("escape" => 5, "theme" => 11);
         $functions = array();
 
@@ -90,57 +90,59 @@ class __TwigTemplate_bc0a4e98272465671767661062d67f5e0a794e55fd76e9604555806d3eb
         // line 13
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/css/theme.css");
         echo "\" rel=\"stylesheet\">
+        <link href=\"https://fonts.googleapis.com/css?family=Montserrat|Poppins|Permanent+Marker|Chewy|Raleway&display=swap\" rel=\"stylesheet\">
+
         ";
-        // line 14
+        // line 16
         echo $this->env->getExtension('Cms\Twig\Extension')->assetsFunction('css');
         echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('styles');
-        // line 15
+        // line 17
         echo "    </head>
     <body>
 
         <!-- Header -->
         <header id=\"layout-header\">
             ";
-        // line 20
+        // line 22
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/header"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 21
+        // line 23
         echo "        </header>
 
         <!-- Content -->
         <section id=\"layout-content\">
             ";
-        // line 25
+        // line 27
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFunction();
-        // line 26
+        // line 28
         echo "        </section>
 
         <!-- Footer -->
         <footer id=\"layout-footer\">
             ";
-        // line 30
+        // line 32
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("site/footer"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 31
+        // line 33
         echo "        </footer>
 
         <!-- Scripts -->
         <script src=\"";
-        // line 34
+        // line 36
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/vendor/jquery.js");
         echo "\"></script>
         <script src=\"";
-        // line 35
+        // line 37
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/vendor/bootstrap.js");
         echo "\"></script>
         <script src=\"";
-        // line 36
+        // line 38
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/javascript/app.js");
         echo "\"></script>
         ";
-        // line 37
+        // line 39
         $_minify = System\Classes\CombineAssets::instance()->useMinify;
         if ($_minify) {
             echo '<script src="' . Request::getBasePath() . '/modules/system/assets/js/framework.combined-min.js"></script>'.PHP_EOL;
@@ -151,11 +153,11 @@ class __TwigTemplate_bc0a4e98272465671767661062d67f5e0a794e55fd76e9604555806d3eb
         }
         echo '<link rel="stylesheet" property="stylesheet" href="' . Request::getBasePath() .'/modules/system/assets/css/framework.extras'.($_minify ? '-min' : '').'.css">'.PHP_EOL;
         unset($_minify);
-        // line 38
+        // line 40
         echo "        ";
         echo $this->env->getExtension('Cms\Twig\Extension')->assetsFunction('js');
         echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('scripts');
-        // line 39
+        // line 41
         echo "
     </body>
 </html>";
@@ -173,7 +175,7 @@ class __TwigTemplate_bc0a4e98272465671767661062d67f5e0a794e55fd76e9604555806d3eb
 
     public function getDebugInfo()
     {
-        return array (  159 => 39,  155 => 38,  144 => 37,  140 => 36,  136 => 35,  132 => 34,  127 => 31,  123 => 30,  117 => 26,  115 => 25,  109 => 21,  105 => 20,  98 => 15,  95 => 14,  91 => 13,  87 => 12,  83 => 11,  76 => 7,  72 => 6,  68 => 5,  62 => 1,);
+        return array (  161 => 41,  157 => 40,  146 => 39,  142 => 38,  138 => 37,  134 => 36,  129 => 33,  125 => 32,  119 => 28,  117 => 27,  111 => 23,  107 => 22,  100 => 17,  97 => 16,  91 => 13,  87 => 12,  83 => 11,  76 => 7,  72 => 6,  68 => 5,  62 => 1,);
     }
 
     public function getSourceContext()
@@ -191,6 +193,8 @@ class __TwigTemplate_bc0a4e98272465671767661062d67f5e0a794e55fd76e9604555806d3eb
         <link rel=\"icon\" type=\"image/png\" href=\"{{ 'assets/images/october.png'|theme }}\">
         <link href=\"{{ 'assets/css/vendor.css'|theme }}\" rel=\"stylesheet\">
         <link href=\"{{ 'assets/css/theme.css'|theme }}\" rel=\"stylesheet\">
+        <link href=\"https://fonts.googleapis.com/css?family=Montserrat|Poppins|Permanent+Marker|Chewy|Raleway&display=swap\" rel=\"stylesheet\">
+
         {% styles %}
     </head>
     <body>

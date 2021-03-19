@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Poppins|Permanent+Marker|Chewy|Raleway&display=swap');
+
+:root {
+    --primary-color: #070826;
+    --secondary-color: #009691;
+    --tertiary-color: #ef4565;
+    --title-font-family: 'Raleway', sans-serif;;
+    --body-font-family: 'Poppins', sans-serif;
+    --fancy-font-family: 'Chewy', cursive;
+    --title-font-size: clamp(1.5rem, 10vw, 2rem);
+    --subtitle-font-size: clamp(1rem, 10vw, 1.5rem);
+    --body-font-size: 0.9rem;
+
+    --font-weight-600: 600;
+  }
