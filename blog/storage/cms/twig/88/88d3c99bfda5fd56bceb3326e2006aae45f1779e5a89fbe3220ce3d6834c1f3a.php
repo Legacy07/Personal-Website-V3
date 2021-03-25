@@ -189,7 +189,7 @@ $context["post"], "published_at", [], "any", false, false, true, 38), 38, $this-
         echo "        </div>
     </div>
 
-    ";
+    <!-- ";
         // line 58
         if ((twig_get_attribute($this->env, $this->source, ($context["posts"] ?? null), "lastPage", [], "any", false, false, true, 58) > 1)) {
             // line 59
@@ -245,8 +245,9 @@ $context["post"], "published_at", [], "any", false, false, true, 38), 38, $this-
             echo "    </ul>
     ";
         }
-        // line 79
-        echo "</body>";
+        // line 78
+        echo " -->
+</body>";
     }
 
     public function getTemplateName()
@@ -261,7 +262,7 @@ $context["post"], "published_at", [], "any", false, false, true, 38), 38, $this-
 
     public function getDebugInfo()
     {
-        return array (  249 => 79,  245 => 77,  237 => 73,  235 => 72,  232 => 71,  221 => 68,  216 => 67,  212 => 66,  209 => 65,  201 => 61,  199 => 60,  196 => 59,  194 => 58,  189 => 55,  180 => 52,  173 => 47,  165 => 45,  160 => 44,  156 => 43,  151 => 40,  147 => 39,  145 => 38,  143 => 37,  139 => 35,  137 => 33,  136 => 32,  133 => 31,  130 => 30,  128 => 29,  122 => 26,  118 => 24,  116 => 23,  115 => 22,  108 => 20,  103 => 17,  95 => 15,  88 => 14,  84 => 13,  78 => 9,  74 => 8,  67 => 3,  65 => 2,  62 => 1,);
+        return array (  249 => 78,  245 => 77,  237 => 73,  235 => 72,  232 => 71,  221 => 68,  216 => 67,  212 => 66,  209 => 65,  201 => 61,  199 => 60,  196 => 59,  194 => 58,  189 => 55,  180 => 52,  173 => 47,  165 => 45,  160 => 44,  156 => 43,  151 => 40,  147 => 39,  145 => 38,  143 => 37,  139 => 35,  137 => 33,  136 => 32,  133 => 31,  130 => 30,  128 => 29,  122 => 26,  118 => 24,  116 => 23,  115 => 22,  108 => 20,  103 => 17,  95 => 15,  88 => 14,  84 => 13,  78 => 9,  74 => 8,  67 => 3,  65 => 2,  62 => 1,);
     }
 
     public function getSourceContext()
@@ -323,7 +324,7 @@ $context["post"], "published_at", [], "any", false, false, true, 38), 38, $this-
         </div>
     </div>
 
-    {% if posts.lastPage > 1 %}
+    <!-- {% if posts.lastPage > 1 %}
     <ul class=\"pagination\">
         {% if posts.currentPage > 1 %}
         <li><a href=\"{{ this.page.baseFileName | page({ (__SELF__.pageParam): (posts.currentPage-1) }) }}\">&larr;
@@ -343,7 +344,7 @@ $context["post"], "published_at", [], "any", false, false, true, 38), 38, $this-
         </li>
         {% endif %}
     </ul>
-    {% endif %}
+    {% endif %} -->
 </body>", "C:\\xampp\\htdocs\\personal-website-v3\\blog/plugins/rainlab/blog/components/posts/default.htm", "");
     }
 }
