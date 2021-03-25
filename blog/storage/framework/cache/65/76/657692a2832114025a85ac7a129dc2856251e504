@@ -1,4 +1,4 @@
-1616634112a:1:{s:11:"default.htm";a:6:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:1609:"description = "Default layout"
+1616634391a:1:{s:11:"default.htm";a:6:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:1908:"description = "Default layout"
 ==
 <!DOCTYPE html>
 <html>
@@ -13,6 +13,7 @@
         <link rel="icon" type="image/png" href="{{ 'assets/images/october.png'|theme }}">
         <link href="{{ 'assets/css/vendor.css'|theme }}" rel="stylesheet">
         <link href="{{ 'assets/css/theme.css'|theme }}" rel="stylesheet">
+        <link href="{{ 'assets/css/footer.css'|theme }}" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat|Poppins|Permanent+Marker|Chewy|Raleway&display=swap" rel="stylesheet">
 
         {% styles %}
@@ -38,11 +39,14 @@
         <script src="{{ 'assets/vendor/jquery.js'|theme }}"></script>
         <script src="{{ 'assets/vendor/bootstrap.js'|theme }}"></script>
         <script src="{{ 'assets/javascript/app.js'|theme }}"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        
         {% framework extras %}
         {% scripts %}
 
     </body>
-</html>";s:5:"mtime";i:1616108530;s:6:"markup";s:1573:"<!DOCTYPE html>
+</html>";s:5:"mtime";i:1616633789;s:6:"markup";s:1872:"<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -55,6 +59,7 @@
         <link rel="icon" type="image/png" href="{{ 'assets/images/october.png'|theme }}">
         <link href="{{ 'assets/css/vendor.css'|theme }}" rel="stylesheet">
         <link href="{{ 'assets/css/theme.css'|theme }}" rel="stylesheet">
+        <link href="{{ 'assets/css/footer.css'|theme }}" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat|Poppins|Permanent+Marker|Chewy|Raleway&display=swap" rel="stylesheet">
 
         {% styles %}
@@ -80,6 +85,9 @@
         <script src="{{ 'assets/vendor/jquery.js'|theme }}"></script>
         <script src="{{ 'assets/vendor/bootstrap.js'|theme }}"></script>
         <script src="{{ 'assets/javascript/app.js'|theme }}"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        
         {% framework extras %}
         {% scripts %}
 

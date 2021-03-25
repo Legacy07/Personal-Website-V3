@@ -67,7 +67,49 @@ class __TwigTemplate_3fe4035dcaf981d875b9ea9b8a07f2513991cf558c93e50a27675908611
         echo twig_escape_filter($this->env, twig_date_format_filter($this->env, "now", "Y"), "html", null, true);
         echo " Alexey Bobkov &amp; Samuel Georges.</p>
     </div>
-</div> -->";
+</div> -->
+
+<footer id=\"contact\" class=\"nav-bar-padding-left-size\">
+    <div class=\"container\">
+        <div class=\"row\">
+            <i class=\"fas fa-angle-double-up\" id=\"autoScrollButton\" onclick=\"autoScrollFunction()\"></i>
+        </div>
+        <div class=\"row\">
+            <ul id=\"footer-links\">
+                <li>
+                    <a href=\"mailto:ahmetince771@gmail.com\" target=\"_blank\">
+                        <i class=\"fa fa-envelope\"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href=\"https://www.linkedin.com/in/ahmet-ince-8a8054150/\" target=\"_blank\">
+                        <i class=\"fab fa-linkedin\"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href=\"https://play.google.com/store/apps/developer?id=Ahmet+Ince&hl=en_GB&gl=US\"
+                        target=\"_blank\">
+                        <i class=\"fab fa-google-play\"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href=\"https://github.com/Legacy07\" target=\"_blank\">
+                        <i class=\"fab fa-github\"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href=\"https://www.producthunt.com/@legacy07\" target=\"_blank\">
+                        <i class=\"fab fa-product-hunt\"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class=\"row\">
+            <p class=\"footer-name\">Ahmet Ince ©2021</p>
+        </div>
+    </div>
+</footer>";
     }
 
     public function getTemplateName()
@@ -92,6 +134,48 @@ class __TwigTemplate_3fe4035dcaf981d875b9ea9b8a07f2513991cf558c93e50a27675908611
         <hr />
         <p class=\"muted credit\">&copy; 2013 - {{ \"now\"|date(\"Y\") }} Alexey Bobkov &amp; Samuel Georges.</p>
     </div>
-</div> -->", "C:\\xampp\\htdocs\\personal-website-v3\\blog/themes/demo/partials/site/footer.htm", "");
+</div> -->
+
+<footer id=\"contact\" class=\"nav-bar-padding-left-size\">
+    <div class=\"container\">
+        <div class=\"row\">
+            <i class=\"fas fa-angle-double-up\" id=\"autoScrollButton\" onclick=\"autoScrollFunction()\"></i>
+        </div>
+        <div class=\"row\">
+            <ul id=\"footer-links\">
+                <li>
+                    <a href=\"mailto:ahmetince771@gmail.com\" target=\"_blank\">
+                        <i class=\"fa fa-envelope\"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href=\"https://www.linkedin.com/in/ahmet-ince-8a8054150/\" target=\"_blank\">
+                        <i class=\"fab fa-linkedin\"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href=\"https://play.google.com/store/apps/developer?id=Ahmet+Ince&hl=en_GB&gl=US\"
+                        target=\"_blank\">
+                        <i class=\"fab fa-google-play\"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href=\"https://github.com/Legacy07\" target=\"_blank\">
+                        <i class=\"fab fa-github\"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href=\"https://www.producthunt.com/@legacy07\" target=\"_blank\">
+                        <i class=\"fab fa-product-hunt\"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class=\"row\">
+            <p class=\"footer-name\">Ahmet Ince ©2021</p>
+        </div>
+    </div>
+</footer>", "C:\\xampp\\htdocs\\personal-website-v3\\blog/themes/demo/partials/site/footer.htm", "");
     }
 }
