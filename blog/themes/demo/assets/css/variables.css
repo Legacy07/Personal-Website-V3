@@ -9,7 +9,7 @@
     --fancy-font-family: 'Chewy', cursive;
     --title-font-size: clamp(1.5rem, 10vw, 2rem);
     --subtitle-font-size: clamp(1rem, 10vw, 1.5rem);
-    --body-font-size: 0.9rem;
+    --body-font-size: 1.4rem;
 
     --font-weight-600: 600;
   }

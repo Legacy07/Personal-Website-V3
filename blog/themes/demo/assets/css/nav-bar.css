@@ -1,0 +1,138 @@
+#nav-bar {
+    background: #181818;
+    width: 60px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 99999;
+    min-height: 500px;
+}
+
+#nav-bar ul {
+    display: block;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+#nav-bar li {
+    margin-bottom: 5px;
+}
+
+#nav-bar li a {
+    color: var(--tertiary-color);
+    transition: 250ms ease-in;
+}
+
+#nav-bar li:hover a {
+    color: var(--secondary-color);
+}
+
+.logo {
+    background: #000;
+    display: block;
+    padding: 8px 0;
+}
+
+.logo img {
+    display: block;
+    margin: 8px auto;
+    /* width: 24px; */
+    height: auto;
+}
+
+#nav-bar nav {
+    display: block;
+    text-align: center;
+}
+
+#nav-bar nav a {
+    font-size: 30px;
+    color: dimgray;
+    display: block;
+    line-height: 51px;
+    height: 51px;
+    position: relative;
+    -webkit-transition: .1s all ease-out;
+    -moz-transition: .1s all ease-out;
+    transition: .1s all ease-out;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+#nav-bar nav a.active,
+#nav-bar nav a:hover {
+    color: var(--secondary-color);
+}
+
+#nav-bar nav a p {
+    display: none;
+}
+
+#nav-bar nav a:hover p {
+    letter-spacing: 2px;
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+    -webkit-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+    text-transform: uppercase;
+}
+
+#nav-bar nav a:hover i {
+    display: none;
+}
+
+.nav-font-size-sm {
+    font-size: 0.8rem;
+}
+
+/* 
+[class^=icon-],
+[class*=" icon-"] {
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+} */
+
+@media (max-width: 769px) {
+    #nav-bar {
+        min-height: auto;
+        height: 50px;
+        width: 100%;
+        flex-direction: row;
+    }
+
+    #nav-bar nav {
+        display: contents;
+    }
+
+    .logo {
+        padding: 8px 8px;
+    }
+
+    #nav-bar nav a {
+        font-size: 25px;
+        padding: 10px;
+        margin-top: 0px;
+    }
+
+    #nav-bar nav a:hover i {
+        display: flex;
+    }
+
+    #nav-bar nav a:hover p {
+        display: none;
+    }
+}

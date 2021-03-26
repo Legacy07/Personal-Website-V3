@@ -65,7 +65,7 @@ class __TwigTemplate_b2c19d37fc7bf5bf04e2a8c3fe9acb072e358c14309c818333023047c3d
         $context["posts"] = twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "posts", [], "any", false, false, true, 2);
         // line 3
         echo "
-    <div class=\"container\">
+    <div class=\"container padding-left\" style=\"margin-bottom: 60px;\">
 
         <!-- look at design - https://codepen.io/ChynoDeluxe/pen/bdXeqQ -->
         <div class=\"row\">
@@ -270,7 +270,7 @@ $context["post"], "published_at", [], "any", false, false, true, 38), 38, $this-
         return new Source("<body>
     {% set posts = __SELF__.posts %}
 
-    <div class=\"container\">
+    <div class=\"container padding-left\" style=\"margin-bottom: 60px;\">
 
         <!-- look at design - https://codepen.io/ChynoDeluxe/pen/bdXeqQ -->
         <div class=\"row\">

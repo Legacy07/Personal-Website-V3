@@ -29,14 +29,14 @@ class __TwigTemplate_4a8ba4f84687d094ca4e5fc3aec958a8d3a956a8695d3a3c49540d895aa
         $this->blocks = [
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
-        $tags = array("if" => 19);
-        $filters = array("page" => 14);
+        $tags = array("if" => 16);
+        $filters = array("page" => 11, "theme" => 26);
         $functions = array();
 
         try {
             $this->sandbox->checkSecurity(
                 ['if'],
-                ['page'],
+                ['page', 'theme'],
                 []
             );
         } catch (SecurityError $e) {
@@ -59,10 +59,7 @@ class __TwigTemplate_4a8ba4f84687d094ca4e5fc3aec958a8d3a956a8695d3a3c49540d895aa
     {
         $macros = $this->macros;
         // line 1
-        echo "<link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css\" rel=\"stylesheet\"
-integrity=\"sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl\" crossorigin=\"anonymous\">
-
-<!-- Nav
+        echo "<!-- Nav
 <nav id=\"layout-nav\" class=\"navbar navbar-inverse navbar-fixed-top navbar-autohide\" role=\"navigation\">
     <div class=\"container\">
         <div class=\"navbar-header\">
@@ -73,7 +70,7 @@ integrity=\"sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolf
                 <span class=\"icon-bar\"></span>
             </button>
             <a class=\"navbar-brand\" href=\"";
-        // line 14
+        // line 11
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("home");
         echo "\">October Demo</a>
         </div>
@@ -81,24 +78,24 @@ integrity=\"sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolf
             <ul class=\"nav navbar-nav\">
                 <li class=\"separator hidden-xs\"></li>
                 <li class=\"";
-        // line 19
-        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 19), "id", [], "any", false, false, true, 19) == "home")) {
+        // line 16
+        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 16), "id", [], "any", false, false, true, 16) == "home")) {
             echo "active";
         }
         echo "\"><a href=\"";
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("home");
         echo "\">Basic concepts</a></li>
                 <li class=\"";
-        // line 20
-        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 20), "id", [], "any", false, false, true, 20) == "ajax")) {
+        // line 17
+        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 17), "id", [], "any", false, false, true, 17) == "ajax")) {
             echo "active";
         }
         echo "\"><a href=\"";
         echo $this->extensions['Cms\Twig\Extension']->pageFilter("ajax");
         echo "\">AJAX framework</a></li>
                 <li class=\"";
-        // line 21
-        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 21), "id", [], "any", false, false, true, 21) == "plugins")) {
+        // line 18
+        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 18), "id", [], "any", false, false, true, 18) == "plugins")) {
             echo "active";
         }
         echo "\"><a href=\"";
@@ -109,16 +106,65 @@ integrity=\"sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolf
     </div>
 </nav> -->
 
-<script src=\"https://code.jquery.com/jquery-3.5.1.js\">
-</script>
+<div id=\"nav-bar\" class=\"\">
+    <a class=\"logo\" rel=\"index\" href=\"#home\">
+        <img src=\"";
+        // line 26
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/logo.png");
+        echo "\" width=\"24px\" height=\"100%\" alt=\"Ahmet Ince logo\">
+    </a>
+    <nav id=\"nav-bar-menu\">
+        <a rel=\"index\" href=\"/#home\" class=\"nav-bar nav-bar-home active\">
+            <i class=\"fa fa-home icon-home\"></i>
+            <p class=\"nav-font-size-sm\">Home</p>
+        </a>
+        <a rel=\"about\" href=\"/#about\" class=\"nav-bar nav-bar-about\">
+            <i class=\"fa fa-user-secret icon-about\"></i>
+            <p class=\"nav-font-size-sm\">About</p>
+        </a>
+        <a rel=\"portfolio\" href=\"/#portfolio\" class=\"nav-bar nav-bar-portfolio\">
+            <i class=\"fa fa-code icon-portfolio\"></i>
+            <p class=\"nav-font-size-sm\">Portfolio</p>
+        </a>
+        <a rel=\"blog\" href=\"/blog\" class=\"nav-bar nav-bar-blog\">
+            <i class=\"fa fa-rss icon-blog\"></i>
+            <p class=\"nav-font-size-sm\">Blog</p>
+        </a>
+        <a rel=\"contact\" href=\"/#contact\" class=\"nav-bar nav-bar-contact\">
+            <i class=\"fa fa-envelope icon-contact\"></i>
+            <p class=\"nav-font-size-sm\">Contact</p>
+        </a>
 
-<script src=\"https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js\"
-    integrity=\"sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi\" crossorigin=\"anonymous\">
-</script>
+    </nav>
 
-<script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js\"
-    integrity=\"sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0\" crossorigin=\"anonymous\">
-</script>";
+    <ul class=\"d-none d-lg-block\">
+        <li>
+            <a href=\"mailto:ahmetince771@gmail.com\" target=\"_blank\">
+                <i class=\"fa fa-envelope\"></i>
+            </a>
+        </li>
+        <li>
+            <a href=\"https://www.linkedin.com/in/ahmet-ince-8a8054150/\" target=\"_blank\">
+                <i class=\"fab fa-linkedin\"></i>
+            </a>
+        </li>
+        <li>
+            <a href=\"https://play.google.com/store/apps/developer?id=Ahmet+Ince&hl=en_GB&gl=US\" target=\"_blank\">
+                <i class=\"fab fa-google-play\"></i>
+            </a>
+        </li>
+        <li>
+            <a href=\"https://github.com/Legacy07\" target=\"_blank\">
+                <i class=\"fab fa-github\"></i>
+            </a>
+        </li>
+        <li>
+            <a href=\"https://www.producthunt.com/@legacy07\" target=\"_blank\">
+                <i class=\"fab fa-product-hunt\"></i>
+            </a>
+        </li>
+    </ul>
+</div>";
     }
 
     public function getTemplateName()
@@ -133,15 +179,12 @@ integrity=\"sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolf
 
     public function getDebugInfo()
     {
-        return array (  101 => 21,  93 => 20,  85 => 19,  77 => 14,  62 => 1,);
+        return array (  113 => 26,  98 => 18,  90 => 17,  82 => 16,  74 => 11,  62 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("<link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css\" rel=\"stylesheet\"
-integrity=\"sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl\" crossorigin=\"anonymous\">
-
-<!-- Nav
+        return new Source("<!-- Nav
 <nav id=\"layout-nav\" class=\"navbar navbar-inverse navbar-fixed-top navbar-autohide\" role=\"navigation\">
     <div class=\"container\">
         <div class=\"navbar-header\">
@@ -164,15 +207,61 @@ integrity=\"sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolf
     </div>
 </nav> -->
 
-<script src=\"https://code.jquery.com/jquery-3.5.1.js\">
-</script>
+<div id=\"nav-bar\" class=\"\">
+    <a class=\"logo\" rel=\"index\" href=\"#home\">
+        <img src=\"{{ 'assets/images/logo.png'|theme }}\" width=\"24px\" height=\"100%\" alt=\"Ahmet Ince logo\">
+    </a>
+    <nav id=\"nav-bar-menu\">
+        <a rel=\"index\" href=\"/#home\" class=\"nav-bar nav-bar-home active\">
+            <i class=\"fa fa-home icon-home\"></i>
+            <p class=\"nav-font-size-sm\">Home</p>
+        </a>
+        <a rel=\"about\" href=\"/#about\" class=\"nav-bar nav-bar-about\">
+            <i class=\"fa fa-user-secret icon-about\"></i>
+            <p class=\"nav-font-size-sm\">About</p>
+        </a>
+        <a rel=\"portfolio\" href=\"/#portfolio\" class=\"nav-bar nav-bar-portfolio\">
+            <i class=\"fa fa-code icon-portfolio\"></i>
+            <p class=\"nav-font-size-sm\">Portfolio</p>
+        </a>
+        <a rel=\"blog\" href=\"/blog\" class=\"nav-bar nav-bar-blog\">
+            <i class=\"fa fa-rss icon-blog\"></i>
+            <p class=\"nav-font-size-sm\">Blog</p>
+        </a>
+        <a rel=\"contact\" href=\"/#contact\" class=\"nav-bar nav-bar-contact\">
+            <i class=\"fa fa-envelope icon-contact\"></i>
+            <p class=\"nav-font-size-sm\">Contact</p>
+        </a>
 
-<script src=\"https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js\"
-    integrity=\"sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi\" crossorigin=\"anonymous\">
-</script>
+    </nav>
 
-<script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js\"
-    integrity=\"sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0\" crossorigin=\"anonymous\">
-</script>", "C:\\xampp\\htdocs\\personal-website-v3\\blog/themes/demo/partials/site/header.htm", "");
+    <ul class=\"d-none d-lg-block\">
+        <li>
+            <a href=\"mailto:ahmetince771@gmail.com\" target=\"_blank\">
+                <i class=\"fa fa-envelope\"></i>
+            </a>
+        </li>
+        <li>
+            <a href=\"https://www.linkedin.com/in/ahmet-ince-8a8054150/\" target=\"_blank\">
+                <i class=\"fab fa-linkedin\"></i>
+            </a>
+        </li>
+        <li>
+            <a href=\"https://play.google.com/store/apps/developer?id=Ahmet+Ince&hl=en_GB&gl=US\" target=\"_blank\">
+                <i class=\"fab fa-google-play\"></i>
+            </a>
+        </li>
+        <li>
+            <a href=\"https://github.com/Legacy07\" target=\"_blank\">
+                <i class=\"fab fa-github\"></i>
+            </a>
+        </li>
+        <li>
+            <a href=\"https://www.producthunt.com/@legacy07\" target=\"_blank\">
+                <i class=\"fab fa-product-hunt\"></i>
+            </a>
+        </li>
+    </ul>
+</div>", "C:\\xampp\\htdocs\\personal-website-v3\\blog/themes/demo/partials/site/header.htm", "");
     }
 }
