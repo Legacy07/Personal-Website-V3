@@ -107,7 +107,7 @@ class __TwigTemplate_4a8ba4f84687d094ca4e5fc3aec958a8d3a956a8695d3a3c49540d895aa
 </nav> -->
 
 <div id=\"nav-bar\" class=\"\">
-    <a class=\"logo\" rel=\"index\" href=\"#home\">
+    <a class=\"logo\" rel=\"index\" href=\"/#home\">
         <img src=\"";
         // line 26
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/logo.png");
@@ -208,7 +208,7 @@ class __TwigTemplate_4a8ba4f84687d094ca4e5fc3aec958a8d3a956a8695d3a3c49540d895aa
 </nav> -->
 
 <div id=\"nav-bar\" class=\"\">
-    <a class=\"logo\" rel=\"index\" href=\"#home\">
+    <a class=\"logo\" rel=\"index\" href=\"/#home\">
         <img src=\"{{ 'assets/images/logo.png'|theme }}\" width=\"24px\" height=\"100%\" alt=\"Ahmet Ince logo\">
     </a>
     <nav id=\"nav-bar-menu\">

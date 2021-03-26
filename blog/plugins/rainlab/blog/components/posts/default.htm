@@ -2,6 +2,13 @@
     {% set posts = __SELF__.posts %}
 
     <div class="container padding-left" style="margin-bottom: 60px;">
+        <!-- add search button -->
+        <div class="row">
+            <div class="col-6">
+                <input type="text">
+                <!-- add search icon and design bar -->
+            </div>
+        </div>
 
         <!-- look at design - https://codepen.io/ChynoDeluxe/pen/bdXeqQ -->
         <div class="row">
@@ -11,7 +18,7 @@
                     <div class="row">
                         <div class="col-sm-5">
                             {% for image in post.featured_images %}
-                            <img class="" height="270px" width="100%" data-src="{{ image.filename }}" src="{{ image.path }}"
+                            <img class="" height="225px" width="100%" data-src="{{ image.filename }}" src="{{ image.path }}"
                                 alt="{{ image.description }}">
                             {% endfor %}
                         </div>

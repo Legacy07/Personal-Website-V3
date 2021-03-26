@@ -1,4 +1,4 @@
-1616719172a:1:{s:15:"site/header.htm";a:5:{s:8:"fileName";s:15:"site/header.htm";s:7:"content";s:3410:"<!-- Nav
+1616720347a:1:{s:15:"site/header.htm";a:5:{s:8:"fileName";s:15:"site/header.htm";s:7:"content";s:3411:"<!-- Nav
 <nav id="layout-nav" class="navbar navbar-inverse navbar-fixed-top navbar-autohide" role="navigation">
     <div class="container">
         <div class="navbar-header">
@@ -22,7 +22,7 @@
 </nav> -->
 
 <div id="nav-bar" class="">
-    <a class="logo" rel="index" href="#home">
+    <a class="logo" rel="index" href="/#home">
         <img src="{{ 'assets/images/logo.png'|theme }}" width="24px" height="100%" alt="Ahmet Ince logo">
     </a>
     <nav id="nav-bar-menu">
@@ -76,7 +76,7 @@
             </a>
         </li>
     </ul>
-</div>";s:5:"mtime";i:1616718571;s:6:"markup";s:3410:"<!-- Nav
+</div>";s:5:"mtime";i:1616718975;s:6:"markup";s:3411:"<!-- Nav
 <nav id="layout-nav" class="navbar navbar-inverse navbar-fixed-top navbar-autohide" role="navigation">
     <div class="container">
         <div class="navbar-header">
@@ -100,7 +100,7 @@
 </nav> -->
 
 <div id="nav-bar" class="">
-    <a class="logo" rel="index" href="#home">
+    <a class="logo" rel="index" href="/#home">
         <img src="{{ 'assets/images/logo.png'|theme }}" width="24px" height="100%" alt="Ahmet Ince logo">
     </a>
     <nav id="nav-bar-menu">

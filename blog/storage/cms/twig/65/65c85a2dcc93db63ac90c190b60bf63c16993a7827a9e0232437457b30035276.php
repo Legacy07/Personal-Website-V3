@@ -63,7 +63,7 @@ class __TwigTemplate_bc0a4e98272465671767661062d67f5e0a794e55fd76e9604555806d3eb
 <html>
     <head>
         <meta charset=\"utf-8\">
-        <title>October CMS - ";
+        <title>Blog - ";
         // line 5
         echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 5), "title", [], "any", false, false, true, 5), 5, $this->source), "html", null, true);
         echo "</title>
@@ -75,12 +75,12 @@ class __TwigTemplate_bc0a4e98272465671767661062d67f5e0a794e55fd76e9604555806d3eb
         // line 7
         echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 7), "meta_title", [], "any", false, false, true, 7), 7, $this->source), "html", null, true);
         echo "\">
-        <meta name=\"author\" content=\"OctoberCMS\">
+        <meta name=\"author\" content=\"Ahmet Ince\">
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
         <meta name=\"generator\" content=\"OctoberCMS\">
         <link rel=\"icon\" type=\"image/png\" href=\"";
         // line 11
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/october.png");
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/logo.png");
         echo "\">
         <link href=\"";
         // line 12
@@ -212,13 +212,13 @@ class __TwigTemplate_bc0a4e98272465671767661062d67f5e0a794e55fd76e9604555806d3eb
 <html>
     <head>
         <meta charset=\"utf-8\">
-        <title>October CMS - {{ this.page.title }}</title>
+        <title>Blog - {{ this.page.title }}</title>
         <meta name=\"description\" content=\"{{ this.page.meta_description }}\">
         <meta name=\"title\" content=\"{{ this.page.meta_title }}\">
-        <meta name=\"author\" content=\"OctoberCMS\">
+        <meta name=\"author\" content=\"Ahmet Ince\">
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
         <meta name=\"generator\" content=\"OctoberCMS\">
-        <link rel=\"icon\" type=\"image/png\" href=\"{{ 'assets/images/october.png'|theme }}\">
+        <link rel=\"icon\" type=\"image/png\" href=\"{{ 'assets/images/logo.png'|theme }}\">
         <link href=\"{{ 'assets/css/vendor.css'|theme }}\" rel=\"stylesheet\">
         <link href=\"{{ 'assets/css/variables.css'|theme }}\" rel=\"stylesheet\">
         <link href=\"{{ 'assets/css/theme.css'|theme }}\" rel=\"stylesheet\">
