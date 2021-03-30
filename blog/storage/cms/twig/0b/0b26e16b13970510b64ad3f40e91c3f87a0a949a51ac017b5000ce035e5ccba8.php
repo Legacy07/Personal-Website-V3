@@ -29,7 +29,7 @@ class __TwigTemplate_360759c36b142c6a3b34d9093ce641d72a5e9ca5b24de325ba230cec34b
         $this->blocks = [
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
-        $tags = array("component" => 1);
+        $tags = array("component" => 8);
         $filters = array();
         $functions = array();
 
@@ -59,9 +59,32 @@ class __TwigTemplate_360759c36b142c6a3b34d9093ce641d72a5e9ca5b24de325ba230cec34b
     {
         $macros = $this->macros;
         // line 1
+        echo "<section id=\"about\" class=\"section-body padding-left\">
+    <h1 class=\"title text-center\">
+            Blog
+    </h1>
+    <div class=\"container\">
+        <div class=\"row\">
+            <div class=\"col-lg-10\">
+                ";
+        // line 8
         $context['__cms_component_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("blogPost"        , $context['__cms_component_params']        );
         unset($context['__cms_component_params']);
+        // line 9
+        echo "            </div>
+        
+            <div class=\"col-lg-2\">
+                ";
+        // line 12
+        $context['__cms_component_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("blogCategories"        , $context['__cms_component_params']        );
+        unset($context['__cms_component_params']);
+        // line 13
+        echo "            </div>
+        </div>
+    </div>
+</section>";
     }
 
     public function getTemplateName()
@@ -76,11 +99,26 @@ class __TwigTemplate_360759c36b142c6a3b34d9093ce641d72a5e9ca5b24de325ba230cec34b
 
     public function getDebugInfo()
     {
-        return array (  62 => 1,);
+        return array (  84 => 13,  80 => 12,  75 => 9,  71 => 8,  62 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("{% component 'blogPost' %}", "C:\\xampp\\htdocs\\personal-website-v3\\blog/themes/demo/pages/post.htm", "");
+        return new Source("<section id=\"about\" class=\"section-body padding-left\">
+    <h1 class=\"title text-center\">
+            Blog
+    </h1>
+    <div class=\"container\">
+        <div class=\"row\">
+            <div class=\"col-lg-10\">
+                {% component 'blogPost' %}
+            </div>
+        
+            <div class=\"col-lg-2\">
+                {% component 'blogCategories' %}
+            </div>
+        </div>
+    </div>
+</section>", "C:\\xampp\\htdocs\\personal-website-v3\\blog/themes/demo/pages/post.htm", "");
     }
 }

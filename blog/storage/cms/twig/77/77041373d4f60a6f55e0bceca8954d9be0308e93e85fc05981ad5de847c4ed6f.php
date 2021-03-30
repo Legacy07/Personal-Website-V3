@@ -29,14 +29,14 @@ class __TwigTemplate_9269b8dfe5f5448b98ba0d26dc7e539fee0fc6e9ce8e34df7faf564ca5c
         $this->blocks = [
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
-        $tags = array("set" => 1, "if" => 5, "for" => 7);
-        $filters = array("raw" => 3, "escape" => 10, "join" => 21, "map" => 21, "trans" => 23, "date" => 24);
+        $tags = array("set" => 1, "if" => 11, "for" => 13);
+        $filters = array("escape" => 4, "trans" => 5, "date" => 6, "raw" => 21, "join" => 28, "map" => 28);
         $functions = array();
 
         try {
             $this->sandbox->checkSecurity(
                 ['set', 'if', 'for'],
-                ['raw', 'escape', 'join', 'map', 'trans', 'date'],
+                ['escape', 'trans', 'date', 'raw', 'join', 'map'],
                 []
             );
         } catch (SecurityError $e) {
@@ -62,78 +62,88 @@ class __TwigTemplate_9269b8dfe5f5448b98ba0d26dc7e539fee0fc6e9ce8e34df7faf564ca5c
         $context["post"] = twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "post", [], "any", false, false, true, 1);
         // line 2
         echo "
-<div class=\"content\">";
-        // line 3
-        echo $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "content_html", [], "any", false, false, true, 3), 3, $this->source);
-        echo "</div>
-
-";
+<div class=\"container\">
+    <h1> ";
+        // line 4
+        echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "title", [], "any", false, false, true, 4), 4, $this->source), "html", null, true);
+        echo " </h1>
+    <h5> ";
         // line 5
-        if (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "featured_images", [], "any", false, false, true, 5), "count", [], "any", false, false, true, 5)) {
-            // line 6
-            echo "    <div class=\"featured-images text-center\">
+        echo call_user_func_array($this->env->getFilter('trans')->getCallable(), ["rainlab.blog::lang.post.posted_byline_no_categories", ["date" => twig_date_format_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source,         // line 6
+($context["post"] ?? null), "published_at", [], "any", false, false, true, 6), 6, $this->source), call_user_func_array($this->env->getFilter('trans')->getCallable(), ["rainlab.blog::lang.post.date_format"]))]]);
+        // line 7
+        echo "
+    </h5>
+
+    <div class=\"row\">
         ";
-            // line 7
+        // line 11
+        if (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "featured_images", [], "any", false, false, true, 11), "count", [], "any", false, false, true, 11)) {
+            // line 12
+            echo "        <div class=\"col-lg-12 text-center \">
+            ";
+            // line 13
             $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "featured_images", [], "any", false, false, true, 7));
+            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "featured_images", [], "any", false, false, true, 13));
             foreach ($context['_seq'] as $context["_key"] => $context["image"]) {
-                // line 8
+                // line 14
                 echo "            <p>
-                <img
-                    data-src=\"";
-                // line 10
-                echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["image"], "filename", [], "any", false, false, true, 10), 10, $this->source), "html", null, true);
-                echo "\"
-                    src=\"";
-                // line 11
-                echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["image"], "path", [], "any", false, false, true, 11), 11, $this->source), "html", null, true);
-                echo "\"
-                    alt=\"";
-                // line 12
-                echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["image"], "description", [], "any", false, false, true, 12), 12, $this->source), "html", null, true);
-                echo "\"
-                    style=\"max-width: 100%\" />
+                <img data-src=\"";
+                // line 15
+                echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["image"], "filename", [], "any", false, false, true, 15), 15, $this->source), "html", null, true);
+                echo "\" src=\"";
+                echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["image"], "path", [], "any", false, false, true, 15), 15, $this->source), "html", null, true);
+                echo "\" alt=\"";
+                echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["image"], "description", [], "any", false, false, true, 15), 15, $this->source), "html", null, true);
+                echo "\" height=\"400px\"/>
             </p>
-        ";
+            ";
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['image'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 16
-            echo "    </div>
-";
-        }
-        // line 18
-        echo "
-<p class=\"info\">
-    ";
-        // line 20
-        if (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "categories", [], "any", false, false, true, 20), "count", [], "any", false, false, true, 20)) {
-            // line 21
-            echo "        ";
-            $context["categoryLinks"] = twig_join_filter(twig_array_map($this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "categories", [], "any", false, false, true, 21), 21, $this->source), function ($__c__) use ($context, $macros) { $context["c"] = $__c__; return (((("<a href=\"" . $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, ($context["c"] ?? null), "url", [], "any", false, false, true, 21), 21, $this->source)) . "\">") . $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, ($context["c"] ?? null), "name", [], "any", false, false, true, 21), 21, $this->source)) . "</a>"); }), ", ");
-            // line 22
-            echo "
+            // line 18
+            echo "        </div>
         ";
-            // line 23
-            echo call_user_func_array($this->env->getFilter('trans')->getCallable(), ["rainlab.blog::lang.post.posted_byline", ["date" => twig_date_format_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source,             // line 24
-($context["post"] ?? null), "published_at", [], "any", false, false, true, 24), 24, $this->source), call_user_func_array($this->env->getFilter('trans')->getCallable(), ["rainlab.blog::lang.post.date_format"])), "categories" =>             // line 25
+        }
+        // line 20
+        echo "        <div class=\"col\">
+            <div>";
+        // line 21
+        echo $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "content_html", [], "any", false, false, true, 21), 21, $this->source);
+        echo "</div>
+        </div>
+    </div>
+</div>
+
+<!-- <p class=\"info\">
+    ";
+        // line 27
+        if (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "categories", [], "any", false, false, true, 27), "count", [], "any", false, false, true, 27)) {
+            // line 28
+            echo "    ";
+            $context["categoryLinks"] = twig_join_filter(twig_array_map($this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "categories", [], "any", false, false, true, 28), 28, $this->source), function ($__c__) use ($context, $macros) { $context["c"] = $__c__; return (((("<a href=\"" . $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, ($context["c"] ?? null), "url", [], "any", false, false, true, 28), 28, $this->source)) . "\">") . $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, ($context["c"] ?? null), "name", [], "any", false, false, true, 28), 28, $this->source)) . "</a>"); }), ", ");
+            // line 29
+            echo "
+    ";
+            // line 30
+            echo call_user_func_array($this->env->getFilter('trans')->getCallable(), ["rainlab.blog::lang.post.posted_byline", ["date" => twig_date_format_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source,             // line 31
+($context["post"] ?? null), "published_at", [], "any", false, false, true, 31), 31, $this->source), call_user_func_array($this->env->getFilter('trans')->getCallable(), ["rainlab.blog::lang.post.date_format"])), "categories" =>             // line 32
 ($context["categoryLinks"] ?? null)]]);
-            // line 26
+            // line 33
             echo "
     ";
         } else {
-            // line 28
-            echo "        ";
-            echo call_user_func_array($this->env->getFilter('trans')->getCallable(), ["rainlab.blog::lang.post.posted_byline_no_categories", ["date" => twig_date_format_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source,             // line 29
-($context["post"] ?? null), "published_at", [], "any", false, false, true, 29), 29, $this->source), call_user_func_array($this->env->getFilter('trans')->getCallable(), ["rainlab.blog::lang.post.date_format"]))]]);
-            // line 30
+            // line 35
+            echo "    ";
+            echo call_user_func_array($this->env->getFilter('trans')->getCallable(), ["rainlab.blog::lang.post.posted_byline_no_categories", ["date" => twig_date_format_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source,             // line 36
+($context["post"] ?? null), "published_at", [], "any", false, false, true, 36), 36, $this->source), call_user_func_array($this->env->getFilter('trans')->getCallable(), ["rainlab.blog::lang.post.date_format"]))]]);
+            // line 37
             echo "
     ";
         }
-        // line 32
-        echo "</p>
-";
+        // line 39
+        echo "</p>  -->";
     }
 
     public function getTemplateName()
@@ -148,43 +158,49 @@ class __TwigTemplate_9269b8dfe5f5448b98ba0d26dc7e539fee0fc6e9ce8e34df7faf564ca5c
 
     public function getDebugInfo()
     {
-        return array (  135 => 32,  131 => 30,  129 => 29,  127 => 28,  123 => 26,  121 => 25,  120 => 24,  119 => 23,  116 => 22,  113 => 21,  111 => 20,  107 => 18,  103 => 16,  93 => 12,  89 => 11,  85 => 10,  81 => 8,  77 => 7,  74 => 6,  72 => 5,  67 => 3,  64 => 2,  62 => 1,);
+        return array (  146 => 39,  142 => 37,  140 => 36,  138 => 35,  134 => 33,  132 => 32,  131 => 31,  130 => 30,  127 => 29,  124 => 28,  122 => 27,  113 => 21,  110 => 20,  106 => 18,  93 => 15,  90 => 14,  86 => 13,  83 => 12,  81 => 11,  75 => 7,  73 => 6,  72 => 5,  68 => 4,  64 => 2,  62 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% set post = __SELF__.post %}
 
-<div class=\"content\">{{ post.content_html | raw }}</div>
+<div class=\"container\">
+    <h1> {{post.title}} </h1>
+    <h5> {{ 'rainlab.blog::lang.post.posted_byline_no_categories' | trans({
+        date: post.published_at | date('rainlab.blog::lang.post.date_format' | trans)
+    }) }}
+    </h5>
 
-{% if post.featured_images.count %}
-    <div class=\"featured-images text-center\">
-        {% for image in post.featured_images %}
+    <div class=\"row\">
+        {% if post.featured_images.count %}
+        <div class=\"col-lg-12 text-center \">
+            {% for image in post.featured_images %}
             <p>
-                <img
-                    data-src=\"{{ image.filename }}\"
-                    src=\"{{ image.path }}\"
-                    alt=\"{{ image.description }}\"
-                    style=\"max-width: 100%\" />
+                <img data-src=\"{{ image.filename }}\" src=\"{{ image.path }}\" alt=\"{{ image.description }}\" height=\"400px\"/>
             </p>
-        {% endfor %}
+            {% endfor %}
+        </div>
+        {% endif %}
+        <div class=\"col\">
+            <div>{{ post.content_html | raw }}</div>
+        </div>
     </div>
-{% endif %}
+</div>
 
-<p class=\"info\">
+<!-- <p class=\"info\">
     {% if post.categories.count %}
-        {% set categoryLinks = post.categories | map(c => \"<a href=\\\"#{c.url}\\\">#{c.name}</a>\") | join(', ') %}
+    {% set categoryLinks = post.categories | map(c => \"<a href=\\\"#{c.url}\\\">#{c.name}</a>\") | join(', ') %}
 
-        {{ 'rainlab.blog::lang.post.posted_byline' | trans({
+    {{ 'rainlab.blog::lang.post.posted_byline' | trans({
             date: post.published_at | date('rainlab.blog::lang.post.date_format' | trans),
             categories: categoryLinks
         }) }}
     {% else %}
-        {{ 'rainlab.blog::lang.post.posted_byline_no_categories' | trans({
+    {{ 'rainlab.blog::lang.post.posted_byline_no_categories' | trans({
             date: post.published_at | date('rainlab.blog::lang.post.date_format'|trans)
         }) }}
     {% endif %}
-</p>
-", "C:\\xampp\\htdocs\\personal-website-v3\\blog/plugins/rainlab/blog/components/post/default.htm", "");
+</p>  -->", "C:\\xampp\\htdocs\\personal-website-v3\\blog/plugins/rainlab/blog/components/post/default.htm", "");
     }
 }
