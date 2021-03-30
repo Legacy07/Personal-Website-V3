@@ -114,7 +114,7 @@ class __TwigTemplate_4a8ba4f84687d094ca4e5fc3aec958a8d3a956a8695d3a3c49540d895aa
         echo "\" width=\"24px\" height=\"100%\" alt=\"Ahmet Ince logo\">
     </a>
     <nav id=\"nav-bar-menu\">
-        <a rel=\"index\" href=\"/#home\" class=\"nav-bar nav-bar-home active\">
+        <a rel=\"index\" href=\"/#home\" class=\"nav-bar nav-bar-home\">
             <i class=\"fa fa-home icon-home\"></i>
             <p class=\"nav-font-size-sm\">Home</p>
         </a>
@@ -126,7 +126,7 @@ class __TwigTemplate_4a8ba4f84687d094ca4e5fc3aec958a8d3a956a8695d3a3c49540d895aa
             <i class=\"fa fa-code icon-portfolio\"></i>
             <p class=\"nav-font-size-sm\">Portfolio</p>
         </a>
-        <a rel=\"blog\" href=\"/blog\" class=\"nav-bar nav-bar-blog\">
+        <a rel=\"blog\" href=\"/blog\" class=\"nav-bar nav-bar-blog active\">
             <i class=\"fa fa-rss icon-blog\"></i>
             <p class=\"nav-font-size-sm\">Blog</p>
         </a>
@@ -212,7 +212,7 @@ class __TwigTemplate_4a8ba4f84687d094ca4e5fc3aec958a8d3a956a8695d3a3c49540d895aa
         <img src=\"{{ 'assets/images/logo.png'|theme }}\" width=\"24px\" height=\"100%\" alt=\"Ahmet Ince logo\">
     </a>
     <nav id=\"nav-bar-menu\">
-        <a rel=\"index\" href=\"/#home\" class=\"nav-bar nav-bar-home active\">
+        <a rel=\"index\" href=\"/#home\" class=\"nav-bar nav-bar-home\">
             <i class=\"fa fa-home icon-home\"></i>
             <p class=\"nav-font-size-sm\">Home</p>
         </a>
@@ -224,7 +224,7 @@ class __TwigTemplate_4a8ba4f84687d094ca4e5fc3aec958a8d3a956a8695d3a3c49540d895aa
             <i class=\"fa fa-code icon-portfolio\"></i>
             <p class=\"nav-font-size-sm\">Portfolio</p>
         </a>
-        <a rel=\"blog\" href=\"/blog\" class=\"nav-bar nav-bar-blog\">
+        <a rel=\"blog\" href=\"/blog\" class=\"nav-bar nav-bar-blog active\">
             <i class=\"fa fa-rss icon-blog\"></i>
             <p class=\"nav-font-size-sm\">Blog</p>
         </a>

@@ -1,4 +1,4 @@
-1617061475a:1:{s:15:"site/header.htm";a:5:{s:8:"fileName";s:15:"site/header.htm";s:7:"content";s:3411:"<!-- Nav
+1617146873a:1:{s:15:"site/header.htm";a:5:{s:8:"fileName";s:15:"site/header.htm";s:7:"content";s:3411:"<!-- Nav
 <nav id="layout-nav" class="navbar navbar-inverse navbar-fixed-top navbar-autohide" role="navigation">
     <div class="container">
         <div class="navbar-header">
@@ -26,7 +26,7 @@
         <img src="{{ 'assets/images/logo.png'|theme }}" width="24px" height="100%" alt="Ahmet Ince logo">
     </a>
     <nav id="nav-bar-menu">
-        <a rel="index" href="/#home" class="nav-bar nav-bar-home active">
+        <a rel="index" href="/#home" class="nav-bar nav-bar-home">
             <i class="fa fa-home icon-home"></i>
             <p class="nav-font-size-sm">Home</p>
         </a>
@@ -38,7 +38,7 @@
             <i class="fa fa-code icon-portfolio"></i>
             <p class="nav-font-size-sm">Portfolio</p>
         </a>
-        <a rel="blog" href="/blog" class="nav-bar nav-bar-blog">
+        <a rel="blog" href="/blog" class="nav-bar nav-bar-blog active">
             <i class="fa fa-rss icon-blog"></i>
             <p class="nav-font-size-sm">Blog</p>
         </a>
@@ -76,7 +76,7 @@
             </a>
         </li>
     </ul>
-</div>";s:5:"mtime";i:1616718975;s:6:"markup";s:3411:"<!-- Nav
+</div>";s:5:"mtime";i:1617061295;s:6:"markup";s:3411:"<!-- Nav
 <nav id="layout-nav" class="navbar navbar-inverse navbar-fixed-top navbar-autohide" role="navigation">
     <div class="container">
         <div class="navbar-header">
@@ -104,7 +104,7 @@
         <img src="{{ 'assets/images/logo.png'|theme }}" width="24px" height="100%" alt="Ahmet Ince logo">
     </a>
     <nav id="nav-bar-menu">
-        <a rel="index" href="/#home" class="nav-bar nav-bar-home active">
+        <a rel="index" href="/#home" class="nav-bar nav-bar-home">
             <i class="fa fa-home icon-home"></i>
             <p class="nav-font-size-sm">Home</p>
         </a>
@@ -116,7 +116,7 @@
             <i class="fa fa-code icon-portfolio"></i>
             <p class="nav-font-size-sm">Portfolio</p>
         </a>
-        <a rel="blog" href="/blog" class="nav-bar nav-bar-blog">
+        <a rel="blog" href="/blog" class="nav-bar nav-bar-blog active">
             <i class="fa fa-rss icon-blog"></i>
             <p class="nav-font-size-sm">Blog</p>
         </a>

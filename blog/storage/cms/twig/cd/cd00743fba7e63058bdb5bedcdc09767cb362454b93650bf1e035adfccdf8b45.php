@@ -69,7 +69,7 @@ class __TwigTemplate_3fe4035dcaf981d875b9ea9b8a07f2513991cf558c93e50a27675908611
     </div>
 </div> -->
 
-<footer id=\"contact\" class=\"nav-bar-padding-left-size\">
+<footer id=\"contact\" class=\"\">
     <div class=\"container\">
         <div class=\"row\">
             <i class=\"fas fa-angle-double-up\" id=\"autoScrollButton\" onclick=\"autoScrollFunction()\"></i>
@@ -136,7 +136,7 @@ class __TwigTemplate_3fe4035dcaf981d875b9ea9b8a07f2513991cf558c93e50a27675908611
     </div>
 </div> -->
 
-<footer id=\"contact\" class=\"nav-bar-padding-left-size\">
+<footer id=\"contact\" class=\"\">
     <div class=\"container\">
         <div class=\"row\">
             <i class=\"fas fa-angle-double-up\" id=\"autoScrollButton\" onclick=\"autoScrollFunction()\"></i>

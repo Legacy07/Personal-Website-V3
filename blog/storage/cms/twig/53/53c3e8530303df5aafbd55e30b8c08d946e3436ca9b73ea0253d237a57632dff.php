@@ -29,7 +29,7 @@ class __TwigTemplate_f1646b5cc2daa52ce7d3f1d5ce0e4a6e0abac9bc41b509d25f8ec91c9cf
         $this->blocks = [
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
-        $tags = array("component" => 1);
+        $tags = array("component" => 6);
         $filters = array();
         $functions = array();
 
@@ -59,9 +59,23 @@ class __TwigTemplate_f1646b5cc2daa52ce7d3f1d5ce0e4a6e0abac9bc41b509d25f8ec91c9cf
     {
         $macros = $this->macros;
         // line 1
+        echo "<section id=\"about\" class=\"section-body padding-left\">
+    <h1 class=\"title text-center\">
+            Blog
+    </h1>
+
+";
+        // line 6
+        $context['__cms_component_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("blogCategories"        , $context['__cms_component_params']        );
+        unset($context['__cms_component_params']);
+        // line 7
         $context['__cms_component_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("blogPosts"        , $context['__cms_component_params']        );
         unset($context['__cms_component_params']);
+        // line 8
+        echo "
+</section>";
     }
 
     public function getTemplateName()
@@ -76,11 +90,19 @@ class __TwigTemplate_f1646b5cc2daa52ce7d3f1d5ce0e4a6e0abac9bc41b509d25f8ec91c9cf
 
     public function getDebugInfo()
     {
-        return array (  62 => 1,);
+        return array (  77 => 8,  73 => 7,  69 => 6,  62 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("{% component 'blogPosts' %}", "C:\\xampp\\htdocs\\personal-website-v3\\blog/themes/demo/pages/home.htm", "");
+        return new Source("<section id=\"about\" class=\"section-body padding-left\">
+    <h1 class=\"title text-center\">
+            Blog
+    </h1>
+
+{% component 'blogCategories' %}
+{% component 'blogPosts' %}
+
+</section>", "C:\\xampp\\htdocs\\personal-website-v3\\blog/themes/demo/pages/home.htm", "");
     }
 }

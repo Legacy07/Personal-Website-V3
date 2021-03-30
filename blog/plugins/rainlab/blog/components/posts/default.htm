@@ -1,18 +1,20 @@
 <body>
     {% set posts = __SELF__.posts %}
 
-    <div class="container padding-left" style="margin-bottom: 60px;">
+    <div class="container" style="margin-bottom: 60px;">
         <!-- add search button -->
         <div class="row">
             <div class="col-3 offset-9">
                 <div class="p-1 bg-light rounded rounded-pill shadow-sm mb-4">
                     <div class="input-group" style="height: 30px;">
                         <div class="input-group-prepend">
-                            <button id="search-button" type="submit" class="btn btn-link" style="color: var(--primary);">
+                            <button id="search-button" type="submit" class="btn btn-link"
+                                style="color: var(--primary);">
                                 <i class="fa fa-search fa-lg mt-2"></i>
                             </button>
                         </div>
-                        <input type="search" aria-describedby="search-button" class="border-0 bg-light" style="width: 90%;">
+                        <input type="search" aria-describedby="search-button" class="border-0 bg-light"
+                            style="width: 90%;">
                     </div>
                 </div>
             </div>
@@ -32,7 +34,8 @@
                         </div>
                         <div class="col-sm-7">
                             <div class="card-block px-2">
-                                <h2 class="blog-title"><a class="title" href="{{ post.url }}">{{ post.title }}</a></h2>
+                                <h2 class="blog-title"><a class="title" href="{{ post.url }}">{{ post.title }}</a>
+                                </h2>
                                 <p class="card-text">
                                     {{ 'rainlab.blog::lang.post.posted_byline_no_categories' | trans({
                                         date: post.published_at | date('rainlab.blog::lang.post.date_format' | trans)
@@ -40,19 +43,6 @@
                                 </p>
                                 <p class="excerpt">{{ post.summary | raw }}</p>
                             </div>
-
-                            <!-- {% if post.categories.count %}
-                            {% set categoryLinks = post.categories | map(c => "<a href=\"#{c.url}\">#{c.name}</a>") | join(', ') %}
-
-                            {{ 'rainlab.blog::lang.post.posted_byline' | trans({
-                                categories: categoryLinks
-                            })
-                         }}
-                            {% else %}
-                            {{ 'rainlab.blog::lang.post.posted_byline_no_categories' | trans({
-                                date: post.published_at | date('rainlab.blog::lang.post.date_format'|trans)
-                            }) }}
-                            {% endif %} -->
 
                             <ul class="blog-categories">
                                 {% for category in post.categories %}
@@ -70,8 +60,9 @@
         </div>
     </div>
 
+
     <!-- {% if posts.lastPage > 1 %}
-    <ul class="pagination">
+    <ul class="pagination" style="margin-left: 100px;" >
         {% if posts.currentPage > 1 %}
         <li><a href="{{ this.page.baseFileName | page({ (__SELF__.pageParam): (posts.currentPage-1) }) }}">&larr;
                 Prev</a>

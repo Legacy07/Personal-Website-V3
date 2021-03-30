@@ -59,7 +59,7 @@ class __TwigTemplate_d18ae7935214ae75bd4cc98889095028bb9024e3441a324fff402e2be8a
     {
         $macros = $this->macros;
         // line 1
-        echo "<div class=\"jumbotron\">
+        echo "<div class=\"jumbotron padding-left\">
     <div class=\"container\">
         <h1>Page not found</h1>
         <p>We're sorry, but the page you requested cannot be found.</p>
@@ -79,7 +79,7 @@ class __TwigTemplate_d18ae7935214ae75bd4cc98889095028bb9024e3441a324fff402e2be8a
 
     public function getSourceContext()
     {
-        return new Source("<div class=\"jumbotron\">
+        return new Source("<div class=\"jumbotron padding-left\">
     <div class=\"container\">
         <h1>Page not found</h1>
         <p>We're sorry, but the page you requested cannot be found.</p>

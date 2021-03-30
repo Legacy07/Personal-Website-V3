@@ -1,10 +1,24 @@
-{% if __SELF__.categories|length > 0 %}
-    <ul class="category-list">
-        {% partial __SELF__ ~ "::items"
-            categories = __SELF__.categories
-            currentCategorySlug = __SELF__.currentCategorySlug
-        %}
-    </ul>
-{% else %}
-    <p>No categories were found.</p>
+{% set categories = __SELF__.categories %}
+
+{% if categories|length > 0 %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <ul class="blog-categories all-categories">
+                {% for category in categories %}
+                    {% if category.posts_count[0].count > 1 %}
+                <li>
+                    <a href="{{category.slug}}">#{{ category.name }}</a>
+                    <span class="badge"> {{category.posts_count[0].count}} </span>
+                    <!-- {% partial __SELF__ ~ "::items"
+                        categories = __SELF__.categories
+                        currentCategorySlug = __SELF__.currentCategorySlug
+                    %} -->
+                </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
 {% endif %}
