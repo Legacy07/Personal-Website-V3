@@ -1,4 +1,4 @@
-1617149223a:1:{s:8:"post.htm";a:11:{s:8:"fileName";s:8:"post.htm";s:7:"content";s:653:"title = "Post"
+1617233275a:1:{s:8:"post.htm";a:11:{s:8:"fileName";s:8:"post.htm";s:7:"content";s:653:"title = "Post"
 url = "/:slug"
 layout = "default"
 is_hidden = 0
@@ -27,7 +27,7 @@ categoryPage = "category"
             </div>
         </div>
     </div>
-</section>";s:5:"mtime";i:1617148622;s:6:"markup";s:432:"<section id="about" class="section-body padding-left">
+</section>";s:5:"mtime";i:1617230214;s:6:"markup";s:432:"<section id="about" class="section-body padding-left">
     <h1 class="title text-center">
             Blog
     </h1>

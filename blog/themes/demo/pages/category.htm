@@ -16,6 +16,10 @@ postPage = "post"
 slug = "{{ :slug }}"
 displayEmpty = 0
 categoryPage = "category"
+
+[searchForm]
+resultPage = "blog/search"
+categoryFilter = 0
 ==
 <section id="about" class="section-body padding-left">
     <h1 class="title text-center">
@@ -23,6 +27,7 @@ categoryPage = "category"
     </h1>
 
 {% component 'blogCategories' %}
+{% component 'searchForm' %}
 {% component 'blogPosts' %}
 
 </section>

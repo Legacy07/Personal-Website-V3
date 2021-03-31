@@ -63,7 +63,7 @@ class __TwigTemplate_9269b8dfe5f5448b98ba0d26dc7e539fee0fc6e9ce8e34df7faf564ca5c
         // line 2
         echo "
 <div class=\"container\">
-    <h1> ";
+    <h1 class=\"blog-post-title\"> ";
         // line 4
         echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, ($context["post"] ?? null), "title", [], "any", false, false, true, 4), 4, $this->source), "html", null, true);
         echo " </h1>
@@ -166,7 +166,7 @@ class __TwigTemplate_9269b8dfe5f5448b98ba0d26dc7e539fee0fc6e9ce8e34df7faf564ca5c
         return new Source("{% set post = __SELF__.post %}
 
 <div class=\"container\">
-    <h1> {{post.title}} </h1>
+    <h1 class=\"blog-post-title\"> {{post.title}} </h1>
     <h5> {{ 'rainlab.blog::lang.post.posted_byline_no_categories' | trans({
         date: post.published_at | date('rainlab.blog::lang.post.date_format' | trans)
     }) }}

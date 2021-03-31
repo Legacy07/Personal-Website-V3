@@ -80,7 +80,7 @@ class __TwigTemplate_65e1a7e49a504dfce07aed28bcf6d61959f724c438f2e917f3fb497f3fc
                 if ((twig_get_attribute($this->env, $this->source, (($__internal_f607aeef2c31a95a7bf963452dff024ffaeb6aafbe4603f9ca3bec57be8633f4 = twig_get_attribute($this->env, $this->source, $context["category"], "posts_count", [], "any", false, false, true, 9)) && is_array($__internal_f607aeef2c31a95a7bf963452dff024ffaeb6aafbe4603f9ca3bec57be8633f4) || $__internal_f607aeef2c31a95a7bf963452dff024ffaeb6aafbe4603f9ca3bec57be8633f4 instanceof ArrayAccess ? ($__internal_f607aeef2c31a95a7bf963452dff024ffaeb6aafbe4603f9ca3bec57be8633f4[0] ?? null) : null), "count", [], "any", false, false, true, 9) > 1)) {
                     // line 10
                     echo "                <li>
-                    <a href=\"";
+                    <a href=\"/blog/category/";
                     // line 11
                     echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["category"], "slug", [], "any", false, false, true, 11), 11, $this->source), "html", null, true);
                     echo "\">#";
@@ -147,7 +147,7 @@ class __TwigTemplate_65e1a7e49a504dfce07aed28bcf6d61959f724c438f2e917f3fb497f3fc
                 {% for category in categories %}
                     {% if category.posts_count[0].count > 1 %}
                 <li>
-                    <a href=\"{{category.slug}}\">#{{ category.name }}</a>
+                    <a href=\"/blog/category/{{category.slug}}\">#{{ category.name }}</a>
                     <span class=\"badge\"> {{category.posts_count[0].count}} </span>
                     <!-- {% partial __SELF__ ~ \"::items\"
                         categories = __SELF__.categories

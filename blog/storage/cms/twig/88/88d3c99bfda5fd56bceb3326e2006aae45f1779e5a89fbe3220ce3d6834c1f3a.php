@@ -29,9 +29,9 @@ class __TwigTemplate_b2c19d37fc7bf5bf04e2a8c3fe9acb072e358c14309c818333023047c3d
         $this->blocks = [
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
-        $tags = array("set" => 2, "for" => 25, "if" => 64);
-        $filters = array("escape" => 31, "trans" => 40, "date" => 41, "raw" => 44, "join" => 49, "map" => 49, "page" => 67);
-        $functions = array("range" => 72);
+        $tags = array("set" => 2, "for" => 16, "if" => 55);
+        $filters = array("escape" => 22, "trans" => 31, "date" => 32, "raw" => 35, "join" => 40, "map" => 40, "page" => 58);
+        $functions = array("range" => 63);
 
         try {
             $this->sandbox->checkSecurity(
@@ -65,110 +65,101 @@ class __TwigTemplate_b2c19d37fc7bf5bf04e2a8c3fe9acb072e358c14309c818333023047c3d
         $context["posts"] = twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "posts", [], "any", false, false, true, 2);
         // line 3
         echo "
+    <!-- look at these plugins
+    https://octobercms.com/plugin/rahman-blogtags
+    https://octobercms.com/plugin/pollozen-nextprevpost
+    https://octobercms.com/plugin/pkleindienst-blogsearch
+    https://octobercms.com/plugin/al3xtig3r-blogutils
+    https://octobercms.com/plugin/zakir-tableofcontent
+    https://octobercms.com/plugin/flynsarmy-commentableratings
+    https://octobercms.com/plugin/pmietlicki-problogsearch
+     -->
     <div class=\"container\" style=\"margin-bottom: 60px;\">
-        <!-- add search button -->
-        <div class=\"row\">
-            <div class=\"col-3 offset-9\">
-                <div class=\"p-1 bg-light rounded rounded-pill shadow-sm mb-4\">
-                    <div class=\"input-group\" style=\"height: 30px;\">
-                        <div class=\"input-group-prepend\">
-                            <button id=\"search-button\" type=\"submit\" class=\"btn btn-link\"
-                                style=\"color: var(--primary);\">
-                                <i class=\"fa fa-search fa-lg mt-2\"></i>
-                            </button>
-                        </div>
-                        <input type=\"search\" aria-describedby=\"search-button\" class=\"border-0 bg-light\"
-                            style=\"width: 90%;\">
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <!-- look at design - https://codepen.io/ChynoDeluxe/pen/bdXeqQ -->
         <div class=\"row\">
             ";
-        // line 25
+        // line 16
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(($context["posts"] ?? null));
         foreach ($context['_seq'] as $context["_key"] => $context["post"]) {
-            // line 26
+            // line 17
             echo "            <div class=\"col-md-6 col-xs-4 mt-5\">
                 <div class=\"card float-right blog-card\" style=\"height: 100%;\">
                     <div class=\"row\">
                         <div class=\"col-sm-5\">
                             ";
-            // line 30
+            // line 21
             $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, $context["post"], "featured_images", [], "any", false, false, true, 30));
+            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, $context["post"], "featured_images", [], "any", false, false, true, 21));
             foreach ($context['_seq'] as $context["_key"] => $context["image"]) {
-                // line 31
+                // line 22
                 echo "                            <img class=\"\" height=\"225px\" width=\"100%\" data-src=\"";
-                echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["image"], "filename", [], "any", false, false, true, 31), 31, $this->source), "html", null, true);
+                echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["image"], "filename", [], "any", false, false, true, 22), 22, $this->source), "html", null, true);
                 echo "\"
                                 src=\"";
-                // line 32
-                echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["image"], "path", [], "any", false, false, true, 32), 32, $this->source), "html", null, true);
+                // line 23
+                echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["image"], "path", [], "any", false, false, true, 23), 23, $this->source), "html", null, true);
                 echo "\" alt=\"";
-                echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["image"], "description", [], "any", false, false, true, 32), 32, $this->source), "html", null, true);
+                echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["image"], "description", [], "any", false, false, true, 23), 23, $this->source), "html", null, true);
                 echo "\">
                             ";
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['image'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 34
+            // line 25
             echo "                        </div>
                         <div class=\"col-sm-7\">
                             <div class=\"card-block px-2\">
                                 <h2 class=\"blog-title\"><a class=\"title\" href=\"";
-            // line 37
-            echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["post"], "url", [], "any", false, false, true, 37), 37, $this->source), "html", null, true);
+            // line 28
+            echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["post"], "url", [], "any", false, false, true, 28), 28, $this->source), "html", null, true);
             echo "\">";
-            echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["post"], "title", [], "any", false, false, true, 37), 37, $this->source), "html", null, true);
+            echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["post"], "title", [], "any", false, false, true, 28), 28, $this->source), "html", null, true);
             echo "</a>
                                 </h2>
                                 <p class=\"card-text\">
                                     ";
-            // line 40
-            echo call_user_func_array($this->env->getFilter('trans')->getCallable(), ["rainlab.blog::lang.post.posted_byline_no_categories", ["date" => twig_date_format_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source,             // line 41
-$context["post"], "published_at", [], "any", false, false, true, 41), 41, $this->source), call_user_func_array($this->env->getFilter('trans')->getCallable(), ["rainlab.blog::lang.post.date_format"]))]]);
-            // line 42
+            // line 31
+            echo call_user_func_array($this->env->getFilter('trans')->getCallable(), ["rainlab.blog::lang.post.posted_byline_no_categories", ["date" => twig_date_format_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source,             // line 32
+$context["post"], "published_at", [], "any", false, false, true, 32), 32, $this->source), call_user_func_array($this->env->getFilter('trans')->getCallable(), ["rainlab.blog::lang.post.date_format"]))]]);
+            // line 33
             echo "
                                 </p>
                                 <p class=\"excerpt\">";
-            // line 44
-            echo $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["post"], "summary", [], "any", false, false, true, 44), 44, $this->source);
+            // line 35
+            echo $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["post"], "summary", [], "any", false, false, true, 35), 35, $this->source);
             echo "</p>
                             </div>
 
                             <ul class=\"blog-categories\">
                                 ";
-            // line 48
+            // line 39
             $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, $context["post"], "categories", [], "any", false, false, true, 48));
+            $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, $context["post"], "categories", [], "any", false, false, true, 39));
             foreach ($context['_seq'] as $context["_key"] => $context["category"]) {
-                // line 49
+                // line 40
                 echo "                                <!-- ";
-                $context["categoryLinks"] = twig_join_filter(twig_array_map($this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["post"], "categories", [], "any", false, false, true, 49), 49, $this->source), function ($__c__) use ($context, $macros) { $context["c"] = $__c__; return (((("<a href=\"" . $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, ($context["c"] ?? null), "url", [], "any", false, false, true, 49), 49, $this->source)) . "\">") . $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, ($context["c"] ?? null), "name", [], "any", false, false, true, 49), 49, $this->source)) . "</a>"); }), ", ");
+                $context["categoryLinks"] = twig_join_filter(twig_array_map($this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["post"], "categories", [], "any", false, false, true, 40), 40, $this->source), function ($__c__) use ($context, $macros) { $context["c"] = $__c__; return (((("<a href=\"" . $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, ($context["c"] ?? null), "url", [], "any", false, false, true, 40), 40, $this->source)) . "\">") . $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, ($context["c"] ?? null), "name", [], "any", false, false, true, 40), 40, $this->source)) . "</a>"); }), ", ");
                 echo " -->
                                 <li>";
-                // line 50
-                echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["category"], "name", [], "any", false, false, true, 50), 50, $this->source), "html", null, true);
+                // line 41
+                echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["category"], "name", [], "any", false, false, true, 41), 41, $this->source), "html", null, true);
                 echo "</li>
                                 ";
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['category'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 52
+            // line 43
             echo "                            </ul>
                         </div>
                     </div>
                 </div>
 
                 <!-- <li class=\"no-data\">";
-            // line 57
-            echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "noPostsMessage", [], "any", false, false, true, 57), 57, $this->source), "html", null, true);
+            // line 48
+            echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "noPostsMessage", [], "any", false, false, true, 48), 48, $this->source), "html", null, true);
             echo "</li> -->
             </div>
             ";
@@ -176,43 +167,43 @@ $context["post"], "published_at", [], "any", false, false, true, 41), 41, $this-
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['post'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 60
+        // line 51
         echo "        </div>
     </div>
 
 
     <!-- ";
-        // line 64
-        if ((twig_get_attribute($this->env, $this->source, ($context["posts"] ?? null), "lastPage", [], "any", false, false, true, 64) > 1)) {
-            // line 65
+        // line 55
+        if ((twig_get_attribute($this->env, $this->source, ($context["posts"] ?? null), "lastPage", [], "any", false, false, true, 55) > 1)) {
+            // line 56
             echo "    <ul class=\"pagination\" style=\"margin-left: 100px;\" >
         ";
-            // line 66
-            if ((twig_get_attribute($this->env, $this->source, ($context["posts"] ?? null), "currentPage", [], "any", false, false, true, 66) > 1)) {
-                // line 67
+            // line 57
+            if ((twig_get_attribute($this->env, $this->source, ($context["posts"] ?? null), "currentPage", [], "any", false, false, true, 57) > 1)) {
+                // line 58
                 echo "        <li><a href=\"";
-                echo $this->extensions['Cms\Twig\Extension']->pageFilter($this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 67), "baseFileName", [], "any", false, false, true, 67), 67, $this->source), [twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "pageParam", [], "any", false, false, true, 67) => (twig_get_attribute($this->env, $this->source, ($context["posts"] ?? null), "currentPage", [], "any", false, false, true, 67) - 1)]);
+                echo $this->extensions['Cms\Twig\Extension']->pageFilter($this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 58), "baseFileName", [], "any", false, false, true, 58), 58, $this->source), [twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "pageParam", [], "any", false, false, true, 58) => (twig_get_attribute($this->env, $this->source, ($context["posts"] ?? null), "currentPage", [], "any", false, false, true, 58) - 1)]);
                 echo "\">&larr;
                 Prev</a>
         </li>
         ";
             }
-            // line 71
+            // line 62
             echo "
         ";
-            // line 72
+            // line 63
             $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable(range(1, twig_get_attribute($this->env, $this->source, ($context["posts"] ?? null), "lastPage", [], "any", false, false, true, 72)));
+            $context['_seq'] = twig_ensure_traversable(range(1, twig_get_attribute($this->env, $this->source, ($context["posts"] ?? null), "lastPage", [], "any", false, false, true, 63)));
             foreach ($context['_seq'] as $context["_key"] => $context["page"]) {
-                // line 73
+                // line 64
                 echo "        <li class=\"";
-                echo (((twig_get_attribute($this->env, $this->source, ($context["posts"] ?? null), "currentPage", [], "any", false, false, true, 73) == $context["page"])) ? ("active") : (null));
+                echo (((twig_get_attribute($this->env, $this->source, ($context["posts"] ?? null), "currentPage", [], "any", false, false, true, 64) == $context["page"])) ? ("active") : (null));
                 echo "\">
             <a href=\"";
-                // line 74
-                echo $this->extensions['Cms\Twig\Extension']->pageFilter($this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 74), "baseFileName", [], "any", false, false, true, 74), 74, $this->source), [twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "pageParam", [], "any", false, false, true, 74) => $context["page"]]);
+                // line 65
+                echo $this->extensions['Cms\Twig\Extension']->pageFilter($this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 65), "baseFileName", [], "any", false, false, true, 65), 65, $this->source), [twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "pageParam", [], "any", false, false, true, 65) => $context["page"]]);
                 echo "\">";
-                echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed($context["page"], 74, $this->source), "html", null, true);
+                echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed($context["page"], 65, $this->source), "html", null, true);
                 echo "</a>
         </li>
         ";
@@ -220,24 +211,24 @@ $context["post"], "published_at", [], "any", false, false, true, 41), 41, $this-
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['page'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 77
+            // line 68
             echo "
         ";
-            // line 78
-            if ((twig_get_attribute($this->env, $this->source, ($context["posts"] ?? null), "lastPage", [], "any", false, false, true, 78) > twig_get_attribute($this->env, $this->source, ($context["posts"] ?? null), "currentPage", [], "any", false, false, true, 78))) {
-                // line 79
+            // line 69
+            if ((twig_get_attribute($this->env, $this->source, ($context["posts"] ?? null), "lastPage", [], "any", false, false, true, 69) > twig_get_attribute($this->env, $this->source, ($context["posts"] ?? null), "currentPage", [], "any", false, false, true, 69))) {
+                // line 70
                 echo "        <li><a href=\"";
-                echo $this->extensions['Cms\Twig\Extension']->pageFilter($this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 79), "baseFileName", [], "any", false, false, true, 79), 79, $this->source), [twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "pageParam", [], "any", false, false, true, 79) => (twig_get_attribute($this->env, $this->source, ($context["posts"] ?? null), "currentPage", [], "any", false, false, true, 79) + 1)]);
+                echo $this->extensions['Cms\Twig\Extension']->pageFilter($this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 70), "baseFileName", [], "any", false, false, true, 70), 70, $this->source), [twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "pageParam", [], "any", false, false, true, 70) => (twig_get_attribute($this->env, $this->source, ($context["posts"] ?? null), "currentPage", [], "any", false, false, true, 70) + 1)]);
                 echo "\">Next
                 &rarr;</a>
         </li>
         ";
             }
-            // line 83
+            // line 74
             echo "    </ul>
     ";
         }
-        // line 84
+        // line 75
         echo " -->
 </body>";
     }
@@ -254,7 +245,7 @@ $context["post"], "published_at", [], "any", false, false, true, 41), 41, $this-
 
     public function getDebugInfo()
     {
-        return array (  241 => 84,  237 => 83,  229 => 79,  227 => 78,  224 => 77,  213 => 74,  208 => 73,  204 => 72,  201 => 71,  193 => 67,  191 => 66,  188 => 65,  186 => 64,  180 => 60,  171 => 57,  164 => 52,  156 => 50,  151 => 49,  147 => 48,  140 => 44,  136 => 42,  134 => 41,  133 => 40,  125 => 37,  120 => 34,  110 => 32,  105 => 31,  101 => 30,  95 => 26,  91 => 25,  67 => 3,  65 => 2,  62 => 1,);
+        return array (  232 => 75,  228 => 74,  220 => 70,  218 => 69,  215 => 68,  204 => 65,  199 => 64,  195 => 63,  192 => 62,  184 => 58,  182 => 57,  179 => 56,  177 => 55,  171 => 51,  162 => 48,  155 => 43,  147 => 41,  142 => 40,  138 => 39,  131 => 35,  127 => 33,  125 => 32,  124 => 31,  116 => 28,  111 => 25,  101 => 23,  96 => 22,  92 => 21,  86 => 17,  82 => 16,  67 => 3,  65 => 2,  62 => 1,);
     }
 
     public function getSourceContext()
@@ -262,25 +253,16 @@ $context["post"], "published_at", [], "any", false, false, true, 41), 41, $this-
         return new Source("<body>
     {% set posts = __SELF__.posts %}
 
+    <!-- look at these plugins
+    https://octobercms.com/plugin/rahman-blogtags
+    https://octobercms.com/plugin/pollozen-nextprevpost
+    https://octobercms.com/plugin/pkleindienst-blogsearch
+    https://octobercms.com/plugin/al3xtig3r-blogutils
+    https://octobercms.com/plugin/zakir-tableofcontent
+    https://octobercms.com/plugin/flynsarmy-commentableratings
+    https://octobercms.com/plugin/pmietlicki-problogsearch
+     -->
     <div class=\"container\" style=\"margin-bottom: 60px;\">
-        <!-- add search button -->
-        <div class=\"row\">
-            <div class=\"col-3 offset-9\">
-                <div class=\"p-1 bg-light rounded rounded-pill shadow-sm mb-4\">
-                    <div class=\"input-group\" style=\"height: 30px;\">
-                        <div class=\"input-group-prepend\">
-                            <button id=\"search-button\" type=\"submit\" class=\"btn btn-link\"
-                                style=\"color: var(--primary);\">
-                                <i class=\"fa fa-search fa-lg mt-2\"></i>
-                            </button>
-                        </div>
-                        <input type=\"search\" aria-describedby=\"search-button\" class=\"border-0 bg-light\"
-                            style=\"width: 90%;\">
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <!-- look at design - https://codepen.io/ChynoDeluxe/pen/bdXeqQ -->
         <div class=\"row\">
             {% for post in posts %}

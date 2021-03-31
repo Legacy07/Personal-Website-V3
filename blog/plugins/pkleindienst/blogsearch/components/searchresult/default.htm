@@ -1,0 +1,45 @@
+<body>
+    {% set posts = __SELF__.posts %}
+
+    <!-- had to copy over from the blog posts list  -->
+    <div class="container" style="margin-bottom: 60px;">
+        <div class="row">
+            {% for post in posts %}
+            <div class="col-md-6 col-xs-4 mt-5">
+                <div class="card float-right blog-card" style="height: 100%;">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            {% for image in post.featured_images %}
+                            <img class="" height="225px" width="100%" data-src="{{ image.filename }}"
+                                src="{{ image.path }}" alt="{{ image.description }}">
+                            {% endfor %}
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="card-block px-2">
+                                <h2 class="blog-title"><a class="title" href="{{ post.url }}">{{ post.title }}</a>
+                                </h2>
+                                <p class="card-text">
+                                    {{ 'rainlab.blog::lang.post.posted_byline_no_categories' | trans({
+                                        date: post.published_at | date('rainlab.blog::lang.post.date_format' | trans)
+                                    }) }}
+                                </p>
+                                <p class="excerpt">{{ post.summary | raw }}</p>
+                            </div>
+
+                            <ul class="blog-categories">
+                                {% for category in post.categories %}
+                                <!-- {% set categoryLinks = post.categories | map(c => "<a href=\"#{c.url}\">#{c.name}</a>") | join(', ') %} -->
+                                <li>{{ category.name }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <li class="no-data">{{ __SELF__.noPostsMessage }}</li> -->
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+<!-- {% partial __SELF__~"::pagination" posts=posts %} -->

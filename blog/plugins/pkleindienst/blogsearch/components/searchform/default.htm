@@ -1,0 +1,26 @@
+<div class="container">
+    <!-- <form class="form-inline" method="GET" action="{{ __SELF__.resultPage|page }}">
+        <input type="text" name="search" class="form-control">
+
+        <button class="btn btn btn-primary" type="submit">{{ 'Search'|_ }}</button>
+    </form> -->
+
+    <div class="row">
+        <div class="col-3 offset-9">
+            <div class="p-1 bg-light rounded rounded-pill shadow-sm mb-4">
+                <form class="" method="GET" action="{{ __SELF__.resultPage|page }}">
+                    <div class="input-group" style="height: 30px;">
+                        <div class="input-group-prepend">
+                            <button id="search-button" type="submit" class="btn btn-link"
+                                style="color: var(--primary);">
+                                <i class="fa fa-search fa-lg mt-2"></i>
+                            </button>
+                        </div>
+                        <input type="text" aria-describedby="search-button" name="search" class="border-0 bg-light"
+                            style="width: 90%;">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

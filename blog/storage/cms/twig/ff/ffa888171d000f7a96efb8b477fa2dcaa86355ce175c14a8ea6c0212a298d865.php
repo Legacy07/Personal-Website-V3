@@ -71,9 +71,13 @@ class __TwigTemplate_9af26ff738ff23104ff72d95bbe482307d5a639be8f788ad46ae487f32f
         unset($context['__cms_component_params']);
         // line 7
         $context['__cms_component_params'] = [];
-        echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("blogPosts"        , $context['__cms_component_params']        );
+        echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("searchForm"        , $context['__cms_component_params']        );
         unset($context['__cms_component_params']);
         // line 8
+        $context['__cms_component_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->componentFunction("blogPosts"        , $context['__cms_component_params']        );
+        unset($context['__cms_component_params']);
+        // line 9
         echo "
 </section>";
     }
@@ -90,7 +94,7 @@ class __TwigTemplate_9af26ff738ff23104ff72d95bbe482307d5a639be8f788ad46ae487f32f
 
     public function getDebugInfo()
     {
-        return array (  77 => 8,  73 => 7,  69 => 6,  62 => 1,);
+        return array (  81 => 9,  77 => 8,  73 => 7,  69 => 6,  62 => 1,);
     }
 
     public function getSourceContext()
@@ -101,6 +105,7 @@ class __TwigTemplate_9af26ff738ff23104ff72d95bbe482307d5a639be8f788ad46ae487f32f
     </h1>
 
 {% component 'blogCategories' %}
+{% component 'searchForm' %}
 {% component 'blogPosts' %}
 
 </section>", "C:\\xampp\\htdocs\\personal-website-v3\\blog/themes/demo/pages/category.htm", "");

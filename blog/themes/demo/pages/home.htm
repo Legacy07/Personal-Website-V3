@@ -5,7 +5,6 @@ is_hidden = 0
 
 [blogPosts]
 pageNumber = "{{ :page }}"
-categoryFilter = ":slug"
 postsPerPage = 10
 noPostsMessage = "No posts found"
 sortOrder = "published_at desc"
@@ -16,6 +15,10 @@ postPage = "post"
 slug = "{{ :slug }}"
 displayEmpty = 0
 categoryPage = "category"
+
+[searchForm]
+resultPage = "search"
+categoryFilter = 1
 ==
 <section id="about" class="section-body padding-left">
     <h1 class="title text-center">
@@ -23,6 +26,7 @@ categoryPage = "category"
     </h1>
 
 {% component 'blogCategories' %}
+{% component 'searchForm' %}
 {% component 'blogPosts' %}
 
 </section>

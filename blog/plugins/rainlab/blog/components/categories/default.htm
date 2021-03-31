@@ -8,7 +8,7 @@
                 {% for category in categories %}
                     {% if category.posts_count[0].count > 1 %}
                 <li>
-                    <a href="{{category.slug}}">#{{ category.name }}</a>
+                    <a href="/blog/category/{{category.slug}}">#{{ category.name }}</a>
                     <span class="badge"> {{category.posts_count[0].count}} </span>
                     <!-- {% partial __SELF__ ~ "::items"
                         categories = __SELF__.categories

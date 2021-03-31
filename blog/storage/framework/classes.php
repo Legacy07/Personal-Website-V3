@@ -21,4 +21,7 @@
   'rainlab\\blog\\Controllers\\categories' => 'plugins\\rainlab\\blog\\controllers\\categories.php',
   'RainLab\\Blog\\FormWidgets\\BlogMarkdown' => 'plugins\\rainlab\\blog\\formwidgets\\BlogMarkdown.php',
   'backend\\Controllers\\media' => 'modules\\backend\\controllers\\media.php',
+  'pkleindienst\\blogsearch\\Plugin' => 'plugins\\pkleindienst\\blogsearch\\Plugin.php',
+  'PKleindienst\\BlogSearch\\Components\\SearchForm' => 'plugins\\pkleindienst\\blogsearch\\components\\SearchForm.php',
+  'PKleindienst\\BlogSearch\\Components\\SearchResult' => 'plugins\\pkleindienst\\blogsearch\\components\\SearchResult.php',
 );
