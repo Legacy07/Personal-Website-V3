@@ -29,7 +29,7 @@ class __TwigTemplate_a227e4a2710f301a66a572f2c289a0cdf23e74aa37ccd779ac2455710f6
         $this->blocks = [
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
-        $tags = array("set" => 2, "for" => 7, "partial" => 45);
+        $tags = array("set" => 2, "for" => 7, "partial" => 47);
         $filters = array("escape" => 13, "trans" => 22, "date" => 23, "raw" => 26, "join" => 31, "map" => 31);
         $functions = array();
 
@@ -147,23 +147,25 @@ $context["post"], "published_at", [], "any", false, false, true, 23), 23, $this-
                         </div>
                     </div>
                 </div>
-
-                <!-- <li class=\"no-data\">";
-            // line 39
-            echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "noPostsMessage", [], "any", false, false, true, 39), 39, $this->source), "html", null, true);
-            echo "</li> -->
             </div>
             ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['post'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 40
+        echo "
+            <!-- <div class=\"col\">
+                <p>";
         // line 42
-        echo "        </div>
+        echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "noPostsMessage", [], "any", false, false, true, 42), 42, $this->source), "html", null, true);
+        echo "</p>
+            </div> -->
+        </div>
     </div>
 </body>
 <!-- ";
-        // line 45
+        // line 47
         $context['__cms_partial_params'] = [];
         $context['__cms_partial_params']['posts'] = ($context["posts"] ?? null)        ;
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction((($context["__SELF__"] ?? null) . "::pagination")        , $context['__cms_partial_params']        , true        );
@@ -183,7 +185,7 @@ $context["post"], "published_at", [], "any", false, false, true, 23), 23, $this-
 
     public function getDebugInfo()
     {
-        return array (  167 => 45,  162 => 42,  153 => 39,  146 => 34,  138 => 32,  133 => 31,  129 => 30,  122 => 26,  118 => 24,  116 => 23,  115 => 22,  107 => 19,  102 => 16,  92 => 14,  87 => 13,  83 => 12,  77 => 8,  73 => 7,  67 => 3,  65 => 2,  62 => 1,);
+        return array (  169 => 47,  161 => 42,  157 => 40,  146 => 34,  138 => 32,  133 => 31,  129 => 30,  122 => 26,  118 => 24,  116 => 23,  115 => 22,  107 => 19,  102 => 16,  92 => 14,  87 => 13,  83 => 12,  77 => 8,  73 => 7,  67 => 3,  65 => 2,  62 => 1,);
     }
 
     public function getSourceContext()
@@ -225,10 +227,12 @@ $context["post"], "published_at", [], "any", false, false, true, 23), 23, $this-
                         </div>
                     </div>
                 </div>
-
-                <!-- <li class=\"no-data\">{{ __SELF__.noPostsMessage }}</li> -->
             </div>
             {% endfor %}
+
+            <!-- <div class=\"col\">
+                <p>{{ __SELF__.noPostsMessage }}</p>
+            </div> -->
         </div>
     </div>
 </body>

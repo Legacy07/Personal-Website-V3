@@ -30,13 +30,13 @@ class __TwigTemplate_f98d95209c8287895e6ca4af6918ab1b631605a7d7f81b6ca279659ded2
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
         $tags = array();
-        $filters = array("page" => 2, "_" => 5);
+        $filters = array("page" => 5);
         $functions = array();
 
         try {
             $this->sandbox->checkSecurity(
                 [],
-                ['page', '_'],
+                ['page'],
                 []
             );
         } catch (SecurityError $e) {
@@ -60,24 +60,12 @@ class __TwigTemplate_f98d95209c8287895e6ca4af6918ab1b631605a7d7f81b6ca279659ded2
         $macros = $this->macros;
         // line 1
         echo "<div class=\"container\">
-    <!-- <form class=\"form-inline\" method=\"GET\" action=\"";
-        // line 2
-        echo $this->extensions['Cms\Twig\Extension']->pageFilter($this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "resultPage", [], "any", false, false, true, 2), 2, $this->source));
-        echo "\">
-        <input type=\"text\" name=\"search\" class=\"form-control\">
-
-        <button class=\"btn btn btn-primary\" type=\"submit\">";
-        // line 5
-        echo call_user_func_array($this->env->getFilter('_')->getCallable(), ["Search"]);
-        echo "</button>
-    </form> -->
-
     <div class=\"row\">
         <div class=\"col-3 offset-9\">
             <div class=\"p-1 bg-light rounded rounded-pill shadow-sm mb-4\">
                 <form class=\"\" method=\"GET\" action=\"";
-        // line 11
-        echo $this->extensions['Cms\Twig\Extension']->pageFilter($this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "resultPage", [], "any", false, false, true, 11), 11, $this->source));
+        // line 5
+        echo $this->extensions['Cms\Twig\Extension']->pageFilter($this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "resultPage", [], "any", false, false, true, 5), 5, $this->source));
         echo "\">
                     <div class=\"input-group\" style=\"height: 30px;\">
                         <div class=\"input-group-prepend\">
@@ -108,18 +96,12 @@ class __TwigTemplate_f98d95209c8287895e6ca4af6918ab1b631605a7d7f81b6ca279659ded2
 
     public function getDebugInfo()
     {
-        return array (  80 => 11,  71 => 5,  65 => 2,  62 => 1,);
+        return array (  68 => 5,  62 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("<div class=\"container\">
-    <!-- <form class=\"form-inline\" method=\"GET\" action=\"{{ __SELF__.resultPage|page }}\">
-        <input type=\"text\" name=\"search\" class=\"form-control\">
-
-        <button class=\"btn btn btn-primary\" type=\"submit\">{{ 'Search'|_ }}</button>
-    </form> -->
-
     <div class=\"row\">
         <div class=\"col-3 offset-9\">
             <div class=\"p-1 bg-light rounded rounded-pill shadow-sm mb-4\">
