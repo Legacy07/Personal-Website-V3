@@ -156,10 +156,10 @@ $context["post"], "published_at", [], "any", false, false, true, 23), 23, $this-
         // line 40
         echo "
             <!-- <div class=\"col\">
-                <p>";
+                <h1>";
         // line 42
         echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, ($context["__SELF__"] ?? null), "noPostsMessage", [], "any", false, false, true, 42), 42, $this->source), "html", null, true);
-        echo "</p>
+        echo "</h1>
             </div> -->
         </div>
     </div>
@@ -231,7 +231,7 @@ $context["post"], "published_at", [], "any", false, false, true, 23), 23, $this-
             {% endfor %}
 
             <!-- <div class=\"col\">
-                <p>{{ __SELF__.noPostsMessage }}</p>
+                <h1>{{ __SELF__.noPostsMessage }}</h1>
             </div> -->
         </div>
     </div>

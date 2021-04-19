@@ -1,5 +1,5 @@
-1617235384a:1:{s:12:"category.htm";a:12:{s:8:"fileName";s:12:"category.htm";s:7:"content";s:665:"title = "Category"
-url = "/category/:slug"
+1618872747a:1:{s:12:"category.htm";a:12:{s:8:"fileName";s:12:"category.htm";s:7:"content";s:672:"title = "Category"
+url = "/category/:slug/:page?"
 layout = "default"
 is_hidden = 0
 
@@ -30,7 +30,7 @@ categoryFilter = 0
 {% component 'searchForm' %}
 {% component 'blogPosts' %}
 
-</section>";s:5:"mtime";i:1617232674;s:6:"markup";s:228:"<section id="about" class="section-body padding-left">
+</section>";s:5:"mtime";i:1618872145;s:6:"markup";s:228:"<section id="about" class="section-body padding-left">
     <h1 class="title text-center">
             Blog
     </h1>
@@ -39,4 +39,4 @@ categoryFilter = 0
 {% component 'searchForm' %}
 {% component 'blogPosts' %}
 
-</section>";s:4:"code";N;s:5:"title";s:8:"Category";s:3:"url";s:15:"/category/:slug";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:9:"blogPosts";a:7:{s:10:"pageNumber";s:11:"{{ :page }}";s:14:"categoryFilter";s:5:":slug";s:12:"postsPerPage";s:2:"10";s:14:"noPostsMessage";s:14:"No posts found";s:9:"sortOrder";s:17:"published_at desc";s:12:"categoryPage";s:8:"category";s:8:"postPage";s:4:"post";}s:14:"blogCategories";a:3:{s:4:"slug";s:11:"{{ :slug }}";s:12:"displayEmpty";s:1:"0";s:12:"categoryPage";s:8:"category";}s:10:"searchForm";a:2:{s:10:"resultPage";s:11:"blog/search";s:14:"categoryFilter";s:1:"0";}}}
+</section>";s:4:"code";N;s:5:"title";s:8:"Category";s:3:"url";s:22:"/category/:slug/:page?";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:9:"blogPosts";a:7:{s:10:"pageNumber";s:11:"{{ :page }}";s:14:"categoryFilter";s:5:":slug";s:12:"postsPerPage";s:2:"10";s:14:"noPostsMessage";s:14:"No posts found";s:9:"sortOrder";s:17:"published_at desc";s:12:"categoryPage";s:8:"category";s:8:"postPage";s:4:"post";}s:14:"blogCategories";a:3:{s:4:"slug";s:11:"{{ :slug }}";s:12:"displayEmpty";s:1:"0";s:12:"categoryPage";s:8:"category";}s:10:"searchForm";a:2:{s:10:"resultPage";s:11:"blog/search";s:14:"categoryFilter";s:1:"0";}}}
