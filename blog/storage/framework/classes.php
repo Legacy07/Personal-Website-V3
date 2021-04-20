@@ -24,4 +24,10 @@
   'pkleindienst\\blogsearch\\Plugin' => 'plugins\\pkleindienst\\blogsearch\\Plugin.php',
   'PKleindienst\\BlogSearch\\Components\\SearchForm' => 'plugins\\pkleindienst\\blogsearch\\components\\SearchForm.php',
   'PKleindienst\\BlogSearch\\Components\\SearchResult' => 'plugins\\pkleindienst\\blogsearch\\components\\SearchResult.php',
+  'backend\\Controllers\\users' => 'modules\\backend\\controllers\\users.php',
+  'vojtasvoboda\\twigextensions\\Plugin' => 'plugins\\vojtasvoboda\\twigextensions\\Plugin.php',
+  'pollozen\\nextprevpost\\Plugin' => 'plugins\\pollozen\\nextprevpost\\Plugin.php',
+  'October\\Demo\\Components\\Todo' => 'plugins\\october\\demo\\components\\Todo.php',
+  'PolloZen\\NextPrevPost\\Components\\NextPrev' => 'plugins\\pollozen\\nextprevpost\\components\\NextPrev.php',
+  'VojtaSvoboda\\TwigExtensions\\Classes\\TimeDiffTranslator' => 'plugins\\vojtasvoboda\\twigextensions\\classes\\TimeDiffTranslator.php',
 );

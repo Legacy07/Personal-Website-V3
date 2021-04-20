@@ -1,5 +1,5 @@
 title = "Post"
-url = "/:slug"
+url = "/post/:slug"
 layout = "default"
 is_hidden = 0
 
@@ -11,6 +11,10 @@ categoryPage = "category"
 slug = "{{ :slug }}"
 displayEmpty = 0
 categoryPage = "category"
+
+[nextAndPrev]
+category = "current"
+postPage = "blog/post"
 ==
 <section id="about" class="section-body padding-left">
     <h1 class="title text-center">
@@ -18,12 +22,16 @@ categoryPage = "category"
     </h1>
     <div class="container">
         <div class="row">
-            <div class="col-lg-10">
+            <div class="col-lg-8">
                 {% component 'blogPost' %}
             </div>
         
             <div class="col-lg-2">
                 {% component 'blogCategories' %}
+            </div>
+            
+            <div class="col-lg-2">
+                {% component 'nextAndPrev' %}
             </div>
         </div>
     </div>

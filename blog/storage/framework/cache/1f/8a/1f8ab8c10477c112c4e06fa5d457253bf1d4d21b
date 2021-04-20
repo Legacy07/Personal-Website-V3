@@ -1,5 +1,5 @@
-1618872488a:1:{s:8:"post.htm";a:11:{s:8:"fileName";s:8:"post.htm";s:7:"content";s:653:"title = "Post"
-url = "/:slug"
+1618959902a:1:{s:8:"post.htm";a:12:{s:8:"fileName";s:8:"post.htm";s:7:"content";s:837:"title = "Post"
+url = "/post/:slug"
 layout = "default"
 is_hidden = 0
 
@@ -11,6 +11,10 @@ categoryPage = "category"
 slug = "{{ :slug }}"
 displayEmpty = 0
 categoryPage = "category"
+
+[nextAndPrev]
+category = "current"
+postPage = "blog/post"
 ==
 <section id="about" class="section-body padding-left">
     <h1 class="title text-center">
@@ -18,28 +22,36 @@ categoryPage = "category"
     </h1>
     <div class="container">
         <div class="row">
-            <div class="col-lg-10">
+            <div class="col-lg-8">
                 {% component 'blogPost' %}
             </div>
         
             <div class="col-lg-2">
                 {% component 'blogCategories' %}
             </div>
+            
+            <div class="col-lg-2">
+                {% component 'nextAndPrev' %}
+            </div>
         </div>
     </div>
-</section>";s:5:"mtime";i:1617233281;s:6:"markup";s:432:"<section id="about" class="section-body padding-left">
+</section>";s:5:"mtime";i:1618958661;s:6:"markup";s:548:"<section id="about" class="section-body padding-left">
     <h1 class="title text-center">
             Blog
     </h1>
     <div class="container">
         <div class="row">
-            <div class="col-lg-10">
+            <div class="col-lg-8">
                 {% component 'blogPost' %}
             </div>
         
             <div class="col-lg-2">
                 {% component 'blogCategories' %}
             </div>
+            
+            <div class="col-lg-2">
+                {% component 'nextAndPrev' %}
+            </div>
         </div>
     </div>
-</section>";s:4:"code";N;s:5:"title";s:4:"Post";s:3:"url";s:6:"/:slug";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:8:"blogPost";a:2:{s:4:"slug";s:11:"{{ :slug }}";s:12:"categoryPage";s:8:"category";}s:14:"blogCategories";a:3:{s:4:"slug";s:11:"{{ :slug }}";s:12:"displayEmpty";s:1:"0";s:12:"categoryPage";s:8:"category";}}}
+</section>";s:4:"code";N;s:5:"title";s:4:"Post";s:3:"url";s:11:"/post/:slug";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:8:"blogPost";a:2:{s:4:"slug";s:11:"{{ :slug }}";s:12:"categoryPage";s:8:"category";}s:14:"blogCategories";a:3:{s:4:"slug";s:11:"{{ :slug }}";s:12:"displayEmpty";s:1:"0";s:12:"categoryPage";s:8:"category";}s:11:"nextAndPrev";a:2:{s:8:"category";s:7:"current";s:8:"postPage";s:9:"blog/post";}}}
