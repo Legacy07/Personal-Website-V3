@@ -6,6 +6,11 @@ $(document).ready(function () {
         navBarItems = navBarMenu.find("a"),
         // Anchors corresponding to nav bar items
         scrollItems = navBarItems.map(function () {
+            var className = $(this).attr("class");
+            var isBlog = className.indexOf("nav-bar-blog") !== -1;
+            if (isBlog) {
+                return;
+            }
             var item = $($(this).attr("href"));
             if (item.length) {
                 return item;
