@@ -1,3 +1,7 @@
 /previous-versions
-/blog/storage/framework/cache/
 /blog/storage/cms/
+/blog/Storage/cms/cache
+/blog/Storage/combiner/assets
+/blog/Storage/cms/twig
+/blog/Storage/framework/cache
+/blog/Storage/framework/sessions

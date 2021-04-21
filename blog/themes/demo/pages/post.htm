@@ -22,7 +22,7 @@ postPage = "blog/post"
     </h1>
     <div class="container">
         <div class="row">
-            <div class="col-lg-8">
+            <div class="col-lg-10">
                 {% component 'blogPost' %}
             </div>
         
@@ -30,9 +30,7 @@ postPage = "blog/post"
                 {% component 'blogCategories' %}
             </div>
             
-            <div class="col-lg-2">
-                {% component 'nextAndPrev' %}
-            </div>
+            {% component 'nextAndPrev' %}
         </div>
     </div>
 </section>
