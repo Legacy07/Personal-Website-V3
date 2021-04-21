@@ -4,7 +4,7 @@
 
 <nav class="nav-growpop">
     {% if prev %}
-    <a class="prev" href="{{prev.url}}" title="{{ prev.title }}">
+    <a class="prev" href="{{ prev.url }}">
         <span class="icon-wrap">
             <i class="fas fa-chevron-left"></i>
         </span>
@@ -19,7 +19,7 @@
     {% endif %}
     {% if next %}
 
-    <a class="next" href="{{next.url}}" title="{{ next.title }}">
+    <a class="next" href="{{ next.url }}">
         <span class="icon-wrap">
             <i class="fas fa-chevron-right"></i>
         </span>
