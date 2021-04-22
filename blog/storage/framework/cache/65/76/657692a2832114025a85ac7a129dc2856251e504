@@ -1,4 +1,4 @@
-1619042889a:1:{s:11:"default.htm";a:6:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:2716:"description = "Default layout"
+1619129913a:1:{s:11:"default.htm";a:6:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:2796:"description = "Default layout"
 ==
 <!DOCTYPE html>
 <html>
@@ -17,6 +17,7 @@
         <link href="{{ 'assets/css/nav-bar.css'|theme }}" rel="stylesheet">
         <link href="{{ 'assets/css/footer.css'|theme }}" rel="stylesheet">
         <link href="{{ 'assets/css/related-articles.css'|theme }}" rel="stylesheet">
+        <link href="{{ 'assets/css/pagination.css'|theme }}" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat|Poppins|Permanent+Marker|Chewy|Raleway&display=swap" rel="stylesheet">
 
 
@@ -59,7 +60,7 @@
         {% scripts %}
 
     </body>
-</html>";s:5:"mtime";i:1618959065;s:6:"markup";s:2680:"<!DOCTYPE html>
+</html>";s:5:"mtime";i:1619127667;s:6:"markup";s:2760:"<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -76,6 +77,7 @@
         <link href="{{ 'assets/css/nav-bar.css'|theme }}" rel="stylesheet">
         <link href="{{ 'assets/css/footer.css'|theme }}" rel="stylesheet">
         <link href="{{ 'assets/css/related-articles.css'|theme }}" rel="stylesheet">
+        <link href="{{ 'assets/css/pagination.css'|theme }}" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat|Poppins|Permanent+Marker|Chewy|Raleway&display=swap" rel="stylesheet">
 
 

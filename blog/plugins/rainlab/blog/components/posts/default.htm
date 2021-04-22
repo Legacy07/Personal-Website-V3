@@ -3,7 +3,6 @@
 
     <!-- look at these plugins
     https://octobercms.com/plugin/rahman-blogtags
-    https://octobercms.com/plugin/pollozen-nextprevpost
      -->
     <div class="container" style="margin-bottom: 60px;">
         <!-- look at design - https://codepen.io/ChynoDeluxe/pen/bdXeqQ -->
@@ -46,26 +45,39 @@
         </div>
     </div>
 
+    <div class="container">
+        <div class="pagination-wrapper">
+            <nav class="pagination-outer" aria-label="Page navigation">
+                {% if posts.lastPage > 1 %}
+                <ul class="pagination">
+                    {% if posts.currentPage > 1 %}
+                    <li class="page-item">
+                        <a href="{{ this.page.baseFileName | page({ (__SELF__.pageParam): (posts.currentPage-1) }) }}"
+                            class="page-link" aria-label="Previous">
+                            <span aria-hidden="true">«</span>
+                        </a>
+                    </li>
+                    {% endif %}
 
-    {% if posts.lastPage > 1 %}
-    <ul class="pagination" style="margin-left: 100px;">
-        {% if posts.currentPage > 1 %}
-        <li><a href="{{ this.page.baseFileName | page({ (__SELF__.pageParam): (posts.currentPage-1) }) }}">&larr;
-                Prev</a>
-        </li>
-        {% endif %}
+                    {% for page in 1..posts.lastPage %}
+                    <li class="page-item {{ posts.currentPage == page ? 'active' : null }}">
+                        <a class="page-link"
+                            href="{{ this.page.baseFileName | page({ (__SELF__.pageParam): page }) }}">{{ page }}</a>
+                    </li>
+                    {% endfor %}
 
-        {% for page in 1..posts.lastPage %}
-        <li class="{{ posts.currentPage == page ? 'active' : null }}">
-            <a href="{{ this.page.baseFileName | page({ (__SELF__.pageParam): page }) }}">{{ page }}</a>
-        </li>
-        {% endfor %}
+                    {% if posts.lastPage > posts.currentPage %}
+                    <li class="page-item">
+                        <a href="{{ this.page.baseFileName | page({ (__SELF__.pageParam): (posts.currentPage+1) }) }}"
+                            class="page-link" aria-label="Next">
+                            <span aria-hidden="true">»</span>
+                        </a>
+                    </li>
+                    {% endif %}
+                </ul>
+                {% endif %}
 
-        {% if posts.lastPage > posts.currentPage %}
-        <li><a href="{{ this.page.baseFileName | page({ (__SELF__.pageParam): (posts.currentPage+1) }) }}">Next
-                &rarr;</a>
-        </li>
-        {% endif %}
-    </ul>
-    {% endif %}
+            </nav>
+        </div>
+    </div>
 </body>
