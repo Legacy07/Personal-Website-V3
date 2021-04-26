@@ -1,5 +1,5 @@
 {
-    "name": "pollozen/nextprevpost-plugin",
+    "name": "rahman/blogtags-plugin",
     "type": "october-plugin",
     "description": "None",
     "require": {

@@ -1,4 +1,4 @@
-1619129913a:1:{s:8:"post.htm";a:12:{s:8:"fileName";s:8:"post.htm";s:7:"content";s:778:"title = "Post"
+1619474851a:1:{s:8:"post.htm";a:11:{s:8:"fileName";s:8:"post.htm";s:7:"content";s:686:"title = "Post"
 url = "/post/:slug"
 layout = "default"
 is_hidden = 0
@@ -11,10 +11,6 @@ categoryPage = "category"
 slug = "{{ :slug }}"
 displayEmpty = 0
 categoryPage = "category"
-
-[nextAndPrev]
-category = "current"
-postPage = "blog/post"
 ==
 <section id="about" class="section-body padding-left">
     <h1 class="title text-center">
@@ -30,10 +26,10 @@ postPage = "blog/post"
                 {% component 'blogCategories' %}
             </div>
             
-            {% component 'nextAndPrev' %}
+            
         </div>
     </div>
-</section>";s:5:"mtime";i:1619040258;s:6:"markup";s:489:"<section id="about" class="section-body padding-left">
+</section>";s:5:"mtime";i:1619474250;s:6:"markup";s:460:"<section id="about" class="section-body padding-left">
     <h1 class="title text-center">
             Blog
     </h1>
@@ -47,7 +43,7 @@ postPage = "blog/post"
                 {% component 'blogCategories' %}
             </div>
             
-            {% component 'nextAndPrev' %}
+            
         </div>
     </div>
-</section>";s:4:"code";N;s:5:"title";s:4:"Post";s:3:"url";s:11:"/post/:slug";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:8:"blogPost";a:2:{s:4:"slug";s:11:"{{ :slug }}";s:12:"categoryPage";s:8:"category";}s:14:"blogCategories";a:3:{s:4:"slug";s:11:"{{ :slug }}";s:12:"displayEmpty";s:1:"0";s:12:"categoryPage";s:8:"category";}s:11:"nextAndPrev";a:2:{s:8:"category";s:7:"current";s:8:"postPage";s:9:"blog/post";}}}
+</section>";s:4:"code";N;s:5:"title";s:4:"Post";s:3:"url";s:11:"/post/:slug";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:8:"blogPost";a:2:{s:4:"slug";s:11:"{{ :slug }}";s:12:"categoryPage";s:8:"category";}s:14:"blogCategories";a:3:{s:4:"slug";s:11:"{{ :slug }}";s:12:"displayEmpty";s:1:"0";s:12:"categoryPage";s:8:"category";}}}

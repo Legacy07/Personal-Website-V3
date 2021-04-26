@@ -30,4 +30,12 @@
   'October\\Demo\\Components\\Todo' => 'plugins\\october\\demo\\components\\Todo.php',
   'PolloZen\\NextPrevPost\\Components\\NextPrev' => 'plugins\\pollozen\\nextprevpost\\components\\NextPrev.php',
   'VojtaSvoboda\\TwigExtensions\\Classes\\TimeDiffTranslator' => 'plugins\\vojtasvoboda\\twigextensions\\classes\\TimeDiffTranslator.php',
+  'rahman\\blogtags\\Plugin' => 'plugins\\rahman\\blogtags\\Plugin.php',
+  'RainLab\\Blog\\Controllers\\Posts' => 'plugins\\rainlab\\blog\\controllers\\Posts.php',
+  'Rahman\\BlogTags\\Models\\Tag' => 'plugins\\rahman\\blogtags\\models\\Tag.php',
+  'rahman\\blogtags\\Controllers\\tags' => 'plugins\\rahman\\blogtags\\controllers\\tags.php',
+  'Rahman\\Blogtags\\Models\\Tag' => 'plugins\\rahman\\blogtags\\models\\Tag.php',
+  'Rahman\\BlogTags\\Components\\Tags' => 'plugins\\rahman\\blogtags\\components\\Tags.php',
+  'Rahman\\BlogTags\\Components\\RelatedPosts' => 'plugins\\rahman\\blogtags\\components\\RelatedPosts.php',
+  'Rahman\\BlogTags\\Components\\SearchPosts' => 'plugins\\rahman\\blogtags\\components\\SearchPosts.php',
 );
