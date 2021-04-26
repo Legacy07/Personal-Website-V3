@@ -1,4 +1,4 @@
-1619474829a:1:{s:8:"home.htm";a:12:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:622:"title = "Blog"
+1619477923a:1:{s:8:"home.htm";a:12:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:588:"title = "Blog"
 url = "/:page?"
 layout = "default"
 is_hidden = 0
@@ -25,16 +25,14 @@ categoryFilter = 1
             Blog
     </h1>
 
-{% component 'blogCategories' %}
 {% component 'searchForm' %}
 {% component 'blogPosts' %}
 
-</section>";s:5:"mtime";i:1618957898;s:6:"markup";s:228:"<section id="about" class="section-body padding-left">
+</section>";s:5:"mtime";i:1619476090;s:6:"markup";s:194:"<section id="about" class="section-body padding-left">
     <h1 class="title text-center">
             Blog
     </h1>
 
-{% component 'blogCategories' %}
 {% component 'searchForm' %}
 {% component 'blogPosts' %}
 

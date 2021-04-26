@@ -11,6 +11,14 @@ categoryPage = "category"
 slug = "{{ :slug }}"
 displayEmpty = 0
 categoryPage = "category"
+
+[tags]
+results = 0
+sortOrder = "created_at desc"
+
+[relatedPosts]
+slug = "{{ :slug }}"
+results = 5
 ==
 <section id="about" class="section-body padding-left">
     <h1 class="title text-center">
@@ -20,13 +28,8 @@ categoryPage = "category"
         <div class="row">
             <div class="col-lg-10">
                 {% component 'blogPost' %}
-            </div>
-        
-            <div class="col-lg-2">
-                {% component 'blogCategories' %}
-            </div>
-            
-            
+            </div>         
         </div>
     </div>
+    {% component 'relatedPosts' %}
 </section>

@@ -1,31 +1,29 @@
-title = "Blog"
-url = "/:page?"
+title = "Tag"
+url = "/tag/:slug"
 layout = "default"
 is_hidden = 0
 
 [blogPosts]
 pageNumber = "{{ :page }}"
+categoryFilter = ":slug"
 postsPerPage = 10
 noPostsMessage = "No posts found"
 sortOrder = "published_at desc"
-categoryPage = "category"
+categoryPage = "tag"
 postPage = "post"
 
-[blogCategories]
-slug = "{{ :slug }}"
-displayEmpty = 0
-categoryPage = "category"
-
-[searchForm]
-resultPage = "search"
-categoryFilter = 1
+[tags]
+results = 0
+sortOrder = "created_at desc"
 ==
 <section id="about" class="section-body padding-left">
     <h1 class="title text-center">
             Blog
     </h1>
 
-{% component 'searchForm' %}
-{% component 'blogPosts' %}
+{% component 'tags' %}
 
+{% partial 'post-by-tag' %}
+
+                
 </section>

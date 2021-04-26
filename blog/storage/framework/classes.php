@@ -38,4 +38,5 @@
   'Rahman\\BlogTags\\Components\\Tags' => 'plugins\\rahman\\blogtags\\components\\Tags.php',
   'Rahman\\BlogTags\\Components\\RelatedPosts' => 'plugins\\rahman\\blogtags\\components\\RelatedPosts.php',
   'Rahman\\BlogTags\\Components\\SearchPosts' => 'plugins\\rahman\\blogtags\\components\\SearchPosts.php',
+  'Rahman\\Blogtags\\Components\\Tags' => 'plugins\\rahman\\blogtags\\components\\Tags.php',
 );

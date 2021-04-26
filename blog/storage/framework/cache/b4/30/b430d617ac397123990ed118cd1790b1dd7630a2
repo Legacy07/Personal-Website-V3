@@ -1,4 +1,4 @@
-1619474829a:1:{s:10:"search.htm";a:12:{s:8:"fileName";s:10:"search.htm";s:7:"content";s:675:"title = "Search"
+1619477923a:1:{s:10:"search.htm";a:12:{s:8:"fileName";s:10:"search.htm";s:7:"content";s:641:"title = "Search"
 url = "/search/:search/:page?"
 layout = "default"
 is_hidden = 0
@@ -26,16 +26,14 @@ categoryFilter = 0
             Blog
     </h1>
 
-{% component 'blogCategories' %}
 {% component 'searchForm' %}
 {% component 'searchResult' %}
 
-</section>";s:5:"mtime";i:1618872172;s:6:"markup";s:231:"<section id="about" class="section-body padding-left">
+</section>";s:5:"mtime";i:1619476095;s:6:"markup";s:197:"<section id="about" class="section-body padding-left">
     <h1 class="title text-center">
             Blog
     </h1>
 
-{% component 'blogCategories' %}
 {% component 'searchForm' %}
 {% component 'searchResult' %}
 

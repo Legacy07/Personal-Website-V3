@@ -1,4 +1,4 @@
-1619474851a:1:{s:8:"post.htm";a:11:{s:8:"fileName";s:8:"post.htm";s:7:"content";s:686:"title = "Post"
+1619477913a:1:{s:8:"post.htm";a:13:{s:8:"fileName";s:8:"post.htm";s:7:"content";s:694:"title = "Post"
 url = "/post/:slug"
 layout = "default"
 is_hidden = 0
@@ -11,6 +11,14 @@ categoryPage = "category"
 slug = "{{ :slug }}"
 displayEmpty = 0
 categoryPage = "category"
+
+[tags]
+results = 0
+sortOrder = "created_at desc"
+
+[relatedPosts]
+slug = "{{ :slug }}"
+results = 5
 ==
 <section id="about" class="section-body padding-left">
     <h1 class="title text-center">
@@ -20,16 +28,11 @@ categoryPage = "category"
         <div class="row">
             <div class="col-lg-10">
                 {% component 'blogPost' %}
-            </div>
-        
-            <div class="col-lg-2">
-                {% component 'blogCategories' %}
-            </div>
-            
-            
+            </div>         
         </div>
     </div>
-</section>";s:5:"mtime";i:1619474250;s:6:"markup";s:460:"<section id="about" class="section-body padding-left">
+    {% component 'relatedPosts' %}
+</section>";s:5:"mtime";i:1619477312;s:6:"markup";s:361:"<section id="about" class="section-body padding-left">
     <h1 class="title text-center">
             Blog
     </h1>
@@ -37,13 +40,8 @@ categoryPage = "category"
         <div class="row">
             <div class="col-lg-10">
                 {% component 'blogPost' %}
-            </div>
-        
-            <div class="col-lg-2">
-                {% component 'blogCategories' %}
-            </div>
-            
-            
+            </div>         
         </div>
     </div>
-</section>";s:4:"code";N;s:5:"title";s:4:"Post";s:3:"url";s:11:"/post/:slug";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:8:"blogPost";a:2:{s:4:"slug";s:11:"{{ :slug }}";s:12:"categoryPage";s:8:"category";}s:14:"blogCategories";a:3:{s:4:"slug";s:11:"{{ :slug }}";s:12:"displayEmpty";s:1:"0";s:12:"categoryPage";s:8:"category";}}}
+    {% component 'relatedPosts' %}
+</section>";s:4:"code";N;s:5:"title";s:4:"Post";s:3:"url";s:11:"/post/:slug";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:8:"blogPost";a:2:{s:4:"slug";s:11:"{{ :slug }}";s:12:"categoryPage";s:8:"category";}s:14:"blogCategories";a:3:{s:4:"slug";s:11:"{{ :slug }}";s:12:"displayEmpty";s:1:"0";s:12:"categoryPage";s:8:"category";}s:4:"tags";a:2:{s:7:"results";s:1:"0";s:9:"sortOrder";s:15:"created_at desc";}s:12:"relatedPosts";a:2:{s:4:"slug";s:11:"{{ :slug }}";s:7:"results";s:1:"5";}}}

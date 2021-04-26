@@ -38,9 +38,12 @@
             </div>
             {% endfor %}
 
-            <!-- <div class="col">
+            {% if posts.count == 0 %}
+            <div class="col">
                 <h1>{{ __SELF__.noPostsMessage }}</h1>
-            </div> -->
+            </div>
+
+            {% endif %}
         </div>
     </div>
 </body>
