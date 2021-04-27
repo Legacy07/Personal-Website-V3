@@ -12,7 +12,8 @@
         <div class="col-lg-12 text-center ">
             {% for image in post.featured_images %}
             <p>
-                <img data-src="{{ image.filename }}" src="{{ image.path }}" alt="{{ image.description }}" height="400px"/>
+                <img data-src="{{ image.filename }}" src="{{ image.path }}" alt="{{ image.description }}"
+                    height="400px" />
             </p>
             {% endfor %}
         </div>
@@ -21,7 +22,44 @@
             <div>{{ post.content_html | raw }}</div>
         </div>
     </div>
+
+    <div class="row">
+        <div class="share--vertical">
+            <a href="javascript:void(0)" onclick="shareLinkedin()" class="share--link linkedin">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+
+            <a href="javascript:void(0)" onclick="shareFacebook()" class="share--link facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </div>
+    </div>
 </div>
+
+<script>
+    // https://css-tricks.com/simple-social-sharing-links/
+    function socialWindow(url) {
+        var left = (screen.width - 570) / 2;
+        var top = (screen.height - 570) / 2;
+        var params = "menubar=no,toolbar=no,status=no,width=570,height=570,top=" + top + ",left=" + left;
+        // Setting 'params' to an empty string will launch
+        // content in a new tab or window rather than a pop-up.
+        // params = "";
+        window.open(url, "NewWindow", params);
+    }
+
+    var pageUrl = encodeURIComponent(document.URL);
+
+    function shareFacebook() {
+        url = "https://www.facebook.com/sharer.php?u=" + pageUrl;
+        socialWindow(url);
+    }
+
+    function shareLinkedin() {
+        url = "https://www.linkedin.com/shareArticle?mini=true&url=" + pageUrl;
+        socialWindow(url);
+    }
+</script>
 
 <!-- <p class="info">
     {% if post.categories.count %}

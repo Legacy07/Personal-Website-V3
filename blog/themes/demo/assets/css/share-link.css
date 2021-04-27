@@ -1,0 +1,29 @@
+.share--vertical {
+    position: absolute;
+    /* left: -95px; */
+    top: 95px;
+}
+
+.share--vertical .share--link {
+    color: white !important;
+    text-align: center;
+    display: block;
+    font-size: 24px;
+    height: 95px;
+    margin-bottom: -10px;
+    width: 95px;
+    padding: 2%;
+    transition: 0.2s;
+}
+
+.share--vertical .share--link:hover {
+    color: var(--tertiary-color) !important;
+}
+
+.share--link.facebook {
+    background: #4267B2;
+}
+
+.share--link.linkedin {
+    background: #2867B2;
+}
