@@ -12,7 +12,7 @@
     height: 95px;
     margin-bottom: -10px;
     width: 95px;
-    padding: 2%;
+    padding: 30%;
     transition: 0.2s;
 }
 
@@ -26,4 +26,24 @@
 
 .share--link.linkedin {
     background: #2867B2;
+}
+
+@media (max-width: 769px) {
+    .share--vertical {
+        position: fixed;
+        top: 50%;
+        display: block;
+        outline: 0;
+        text-align: left;
+        z-index: 1000;
+        transform: translateY(-50%);
+        left: 0px;
+    }
+
+    .share--vertical .share--link {
+        height: 40px;
+        width: 40px;
+        font-size: 16px;
+        padding: 10%;
+    }
 }
